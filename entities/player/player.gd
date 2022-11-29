@@ -1,31 +1,106 @@
+# Code from Godot docs FPS tutorial
+
 extends CharacterBody3D
 
+const GRAVITY = -24.8
+var vel = Vector3()
+const MAX_SPEED = 20
+const JUMP_SPEED = 18
+const ACCEL = 4.5
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+var dir = Vector3()
 
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+const DEACCEL= 16
+const MAX_SLOPE_ANGLE = 40
 
+var camera
+var rotation_helper
+
+@export var MOUSE_SENSITIVITY = 0.05
+
+func _ready():
+	camera = $Neck/Camera3D
+	rotation_helper = $Neck
+
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
-	# Add the gravity.
-	if not is_on_floor():
-		velocity.y -= gravity * delta
+	process_input(delta)
+	process_movement(delta)
 
-	# Handle Jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+func process_input(delta):
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+	# ----------------------------------
+	# Walking
+	dir = Vector3()
+	var cam_xform = camera.get_global_transform()
+
+	var input_movement_vector = Vector2()
+
+	if Input.is_action_pressed("movement_forward"):
+		input_movement_vector.y += 1
+	if Input.is_action_pressed("movement_back"):
+		input_movement_vector.y -= 1
+	if Input.is_action_pressed("movement_left"):
+		input_movement_vector.x -= 1
+	if Input.is_action_pressed("movement_right"):
+		input_movement_vector.x += 1
+
+	input_movement_vector = input_movement_vector.normalized()
+
+	# Basis vectors are already normalized.
+	dir += -cam_xform.basis.z * input_movement_vector.y
+	dir += cam_xform.basis.x * input_movement_vector.x
+	# ----------------------------------
+
+	# ----------------------------------
+	# Jumping
+	if is_on_floor():
+		if Input.is_action_just_pressed("movement_jump"):
+			vel.y = JUMP_SPEED
+	# ----------------------------------
+
+	# ----------------------------------
+	# Capturing/Freeing the cursor
+	if Input.is_action_just_pressed("ui_cancel"):
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	# ----------------------------------
+
+func process_movement(delta):
+	dir.y = 0
+	dir = dir.normalized()
+
+	vel.y += delta * GRAVITY
+
+	var hvel = vel
+	hvel.y = 0
+
+	var target = dir
+	target *= MAX_SPEED
+
+	var accel
+	if dir.dot(hvel) > 0:
+		accel = ACCEL
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		accel = DEACCEL
 
+	hvel = hvel.lerp(target, accel * delta)
+	vel.x = hvel.x
+	vel.z = hvel.z
+	
+	#move_and_slide()
+	velocity = vel
 	move_and_slide()
+	#vel = move_and_slide(vel, Vector3(0, 1, 0), 0.05, 4, deg_to_rad(MAX_SLOPE_ANGLE))
+
+func _input(event):
+	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		rotation_helper.rotate_x(deg_to_rad(event.relative.y * MOUSE_SENSITIVITY))
+		self.rotate_y(deg_to_rad(event.relative.x * MOUSE_SENSITIVITY * -1))
+
+		var camera_rot = rotation_helper.rotation
+		camera_rot.x = clamp(camera_rot.x, -70, 70)
+		rotation_helper.rotation = camera_rot
