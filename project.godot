@@ -10,12 +10,12 @@ config_version=5
 
 _global_script_classes=[{
 "base": "RefCounted",
-"class": &"Tool",
+"class": &"PlayerTool",
 "language": &"GDScript",
 "path": "res://entities/player/tools/tool.gd"
 }]
 _global_script_class_icons={
-"Tool": ""
+"PlayerTool": ""
 }
 
 [application]

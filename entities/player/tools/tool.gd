@@ -1,6 +1,6 @@
 # Base class defining core functionality of all usable tools
 # Handles boilerplate like input checking and some basic control booleans
-class_name Tool
+class_name PlayerTool
 	
 var toolName = "Default"
 var isEquip : bool = false
