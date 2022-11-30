@@ -1,12 +1,15 @@
 # Base class defining core functionality of all usable tools
 # Handles boilerplate like input checking and some basic control booleans
-class_name PlayerTool
+extends Node3D
+
+class_name UsableTool
 	
 var toolName = "Default"
 var isEquip : bool = false
 var canUSe : bool = true
 
 func _process(delta):
+	_process_input()
 	pass
 
 func _process_input():
