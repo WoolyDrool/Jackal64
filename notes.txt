@@ -8,3 +8,10 @@ Foxspur 2.0 Design Changes
 - Reduced scope overall
 - Trash is now divided up between recycling and non and deposit methods / rewards are different for each - with penalties for incorrect depositing
 
+- Minigame Ideas - 
+Gate unlocking
+Wiping off grime
+Putting objects in a bag
+Tying trash bag
+Can crushing
+Chopping firewood
