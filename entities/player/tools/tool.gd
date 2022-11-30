@@ -8,7 +8,7 @@ class Tool:
 	var toolName = "Default"
 	var isEquip : bool = false
 	var canUSe : bool = true
-
+	
 	func _process(delta):
 		pass
 	
