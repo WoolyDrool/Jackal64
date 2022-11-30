@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btjddff03nkld"
-path="res://.godot/imported/tex_structure_roadsign_noFlipping.png-94d89e3696ca84f7803ae5927daa896b.ctex"
+path="res://.godot/imported/tex_structure_roadsign_noFlipping.png-857a0a8fe6bb8c0273efa3ded71eb167.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Structures/tex_structure_roadsign_noFlipping.png"
-dest_files=["res://.godot/imported/tex_structure_roadsign_noFlipping.png-94d89e3696ca84f7803ae5927daa896b.ctex"]
+source_file="res://media/textures/Objects/Structures/tex_structure_roadsign_noFlipping.png"
+dest_files=["res://.godot/imported/tex_structure_roadsign_noFlipping.png-857a0a8fe6bb8c0273efa3ded71eb167.ctex"]
 
 [params]
 

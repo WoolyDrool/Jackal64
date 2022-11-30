@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgfrqmur64li8"
-path="res://.godot/imported/spr_vehicles_gasMeter.png-e83444f2e0de1646383031f842e18ced.ctex"
+path="res://.godot/imported/spr_vehicles_gasMeter.png-548564ea96a4bba2d7d4614031b0e60c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Vehicles/spr_vehicles_gasMeter.png"
-dest_files=["res://.godot/imported/spr_vehicles_gasMeter.png-e83444f2e0de1646383031f842e18ced.ctex"]
+source_file="res://media/sprites/UI/Vehicles/spr_vehicles_gasMeter.png"
+dest_files=["res://.godot/imported/spr_vehicles_gasMeter.png-548564ea96a4bba2d7d4614031b0e60c.ctex"]
 
 [params]
 

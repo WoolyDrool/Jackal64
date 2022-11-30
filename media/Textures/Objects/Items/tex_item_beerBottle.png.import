@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4jptkq17qnm8"
-path="res://.godot/imported/tex_item_beerBottle.png-91dbd1dc92f340c7910508095582e472.ctex"
+path="res://.godot/imported/tex_item_beerBottle.png-99a25a5d10b9d41aa1dbd04c14c1c416.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Items/tex_item_beerBottle.png"
-dest_files=["res://.godot/imported/tex_item_beerBottle.png-91dbd1dc92f340c7910508095582e472.ctex"]
+source_file="res://media/textures/Objects/Items/tex_item_beerBottle.png"
+dest_files=["res://.godot/imported/tex_item_beerBottle.png-99a25a5d10b9d41aa1dbd04c14c1c416.ctex"]
 
 [params]
 

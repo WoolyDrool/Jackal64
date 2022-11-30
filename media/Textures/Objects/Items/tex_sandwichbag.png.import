@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beq4axeb0qy7n"
-path="res://.godot/imported/tex_sandwichbag.png-2b19fd6f578376359ce9ab72a9c377f0.ctex"
+path="res://.godot/imported/tex_sandwichbag.png-5663bd4320771d30bdf2b5862dbf0b3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Items/tex_sandwichbag.png"
-dest_files=["res://.godot/imported/tex_sandwichbag.png-2b19fd6f578376359ce9ab72a9c377f0.ctex"]
+source_file="res://media/textures/Objects/Items/tex_sandwichbag.png"
+dest_files=["res://.godot/imported/tex_sandwichbag.png-5663bd4320771d30bdf2b5862dbf0b3b.ctex"]
 
 [params]
 

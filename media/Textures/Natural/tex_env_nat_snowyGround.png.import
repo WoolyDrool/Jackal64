@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dehalaqxe2pky"
-path="res://.godot/imported/tex_env_nat_snowyGround.png-8fe2668bb7b50261904ee581edce5c1e.ctex"
+path="res://.godot/imported/tex_env_nat_snowyGround.png-bfe19b2bbbf4f62803e7f98b7b97ce40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Natural/tex_env_nat_snowyGround.png"
-dest_files=["res://.godot/imported/tex_env_nat_snowyGround.png-8fe2668bb7b50261904ee581edce5c1e.ctex"]
+source_file="res://media/textures/Natural/tex_env_nat_snowyGround.png"
+dest_files=["res://.godot/imported/tex_env_nat_snowyGround.png-bfe19b2bbbf4f62803e7f98b7b97ce40.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu82uxuecxfyi"
-path="res://.godot/imported/tex_structure_trailsign.png-2ae9a7f27ab99ae9c6aab352162eadd5.ctex"
+path="res://.godot/imported/tex_structure_trailsign.png-b383557c7929c6eab37f41876be53d85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Structures/tex_structure_trailsign.png"
-dest_files=["res://.godot/imported/tex_structure_trailsign.png-2ae9a7f27ab99ae9c6aab352162eadd5.ctex"]
+source_file="res://media/textures/Objects/Structures/tex_structure_trailsign.png"
+dest_files=["res://.godot/imported/tex_structure_trailsign.png-b383557c7929c6eab37f41876be53d85.ctex"]
 
 [params]
 

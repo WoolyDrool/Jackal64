@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7yjojr0rnywt"
-path="res://.godot/imported/spr_ui_item_gauze.png-c1cadb2f12c4985fe6632cf4cfb3315a.ctex"
+path="res://.godot/imported/spr_ui_item_gauze.png-bf8883056289b232f30b063fdf4abc28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Items/spr_ui_item_gauze.png"
-dest_files=["res://.godot/imported/spr_ui_item_gauze.png-c1cadb2f12c4985fe6632cf4cfb3315a.ctex"]
+source_file="res://media/sprites/UI/Items/spr_ui_item_gauze.png"
+dest_files=["res://.godot/imported/spr_ui_item_gauze.png-bf8883056289b232f30b063fdf4abc28.ctex"]
 
 [params]
 

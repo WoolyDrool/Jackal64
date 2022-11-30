@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dmwmks5ucrhrp"
-path="res://.godot/imported/DOTMBold.TTF-ad22d8f1a2ddcc6cd6404b5cf3eb1206.fontdata"
+path="res://.godot/imported/DOTMBold.TTF-9a6f042392ccb435584425d04157ceff.fontdata"
 
 [deps]
 
-source_file="res://media/Fonts/DOTMBold.TTF"
-dest_files=["res://.godot/imported/DOTMBold.TTF-ad22d8f1a2ddcc6cd6404b5cf3eb1206.fontdata"]
+source_file="res://media/fonts/DOTMBold.TTF"
+dest_files=["res://.godot/imported/DOTMBold.TTF-9a6f042392ccb435584425d04157ceff.fontdata"]
 
 [params]
 

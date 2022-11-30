@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://d1o6kv64g121o"
-path="res://.godot/imported/coolvetica condensed rg.ttf-7d2adb6931a0a419f8da1526e81d7c95.fontdata"
+path="res://.godot/imported/coolvetica condensed rg.ttf-51a7cbcc9a6de5cbd011074027bd1cc1.fontdata"
 
 [deps]
 
-source_file="res://media/Fonts/coolvetica condensed rg.ttf"
-dest_files=["res://.godot/imported/coolvetica condensed rg.ttf-7d2adb6931a0a419f8da1526e81d7c95.fontdata"]
+source_file="res://media/fonts/coolvetica condensed rg.ttf"
+dest_files=["res://.godot/imported/coolvetica condensed rg.ttf-51a7cbcc9a6de5cbd011074027bd1cc1.fontdata"]
 
 [params]
 

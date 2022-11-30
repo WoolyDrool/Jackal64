@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgtv7xxc8cuj0"
-path="res://.godot/imported/tex_item_sodacup.png-aa50d44acbd4ea4a80856aac7bc89552.ctex"
+path="res://.godot/imported/tex_item_sodacup.png-02d6be250615a4524f2cd7841e870347.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Items/tex_item_sodacup.png"
-dest_files=["res://.godot/imported/tex_item_sodacup.png-aa50d44acbd4ea4a80856aac7bc89552.ctex"]
+source_file="res://media/textures/Objects/Items/tex_item_sodacup.png"
+dest_files=["res://.godot/imported/tex_item_sodacup.png-02d6be250615a4524f2cd7841e870347.ctex"]
 
 [params]
 

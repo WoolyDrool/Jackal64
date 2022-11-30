@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://32c81t04ij0r"
-path="res://.godot/imported/tex_obj_env_nat_treeLeaves1_bw.png-5744f0f56a59c97e86119eed5870e79c.ctex"
+path="res://.godot/imported/tex_obj_env_nat_treeLeaves1_bw.png-f2cc7ce2d0ed6a2b84cbbea295aa9fb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Natural/Trees/tex_obj_env_nat_treeLeaves1_bw.png"
-dest_files=["res://.godot/imported/tex_obj_env_nat_treeLeaves1_bw.png-5744f0f56a59c97e86119eed5870e79c.ctex"]
+source_file="res://media/textures/Natural/Trees/tex_obj_env_nat_treeLeaves1_bw.png"
+dest_files=["res://.godot/imported/tex_obj_env_nat_treeLeaves1_bw.png-f2cc7ce2d0ed6a2b84cbbea295aa9fb2.ctex"]
 
 [params]
 

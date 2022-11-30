@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lfrtoqu0bpsx"
-path="res://.godot/imported/spr_ui_item_sardines.png-a0106915964e468566aeceb712934dfa.ctex"
+path="res://.godot/imported/spr_ui_item_sardines.png-8b3ff3965f798749aedc2f7893c72a2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Items/spr_ui_item_sardines.png"
-dest_files=["res://.godot/imported/spr_ui_item_sardines.png-a0106915964e468566aeceb712934dfa.ctex"]
+source_file="res://media/sprites/UI/Items/spr_ui_item_sardines.png"
+dest_files=["res://.godot/imported/spr_ui_item_sardines.png-8b3ff3965f798749aedc2f7893c72a2e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4xk4o2plmjoi"
-path="res://.godot/imported/tex_decal_cavescrawl.png-b46d21e24509f3e8e8bc4553e8e3e54f.ctex"
+path="res://.godot/imported/tex_decal_cavescrawl.png-1a089ddd3e5e8b57adb50ed20480fc2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Decals/tex_decal_cavescrawl.png"
-dest_files=["res://.godot/imported/tex_decal_cavescrawl.png-b46d21e24509f3e8e8bc4553e8e3e54f.ctex"]
+source_file="res://media/textures/Decals/tex_decal_cavescrawl.png"
+dest_files=["res://.godot/imported/tex_decal_cavescrawl.png-1a089ddd3e5e8b57adb50ed20480fc2c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch4vro64kfbie"
-path="res://.godot/imported/tex_decal_notwelcome.png-99d8e9b729859a737929715f5feacc8f.ctex"
+path="res://.godot/imported/tex_decal_notwelcome.png-dca126d4c8fd0d3f7b9e399d449ac8e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Decals/tex_decal_notwelcome.png"
-dest_files=["res://.godot/imported/tex_decal_notwelcome.png-99d8e9b729859a737929715f5feacc8f.ctex"]
+source_file="res://media/textures/Decals/tex_decal_notwelcome.png"
+dest_files=["res://.godot/imported/tex_decal_notwelcome.png-dca126d4c8fd0d3f7b9e399d449ac8e4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cseqmkqsxfbbb"
-path="res://.godot/imported/spr_ui_item_trailmix.png-4f1b4ecb06216c63d7a6bf81f660d06a.ctex"
+path="res://.godot/imported/spr_ui_item_trailmix.png-1ad219b1bf0598b17f7b937187881270.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Items/spr_ui_item_trailmix.png"
-dest_files=["res://.godot/imported/spr_ui_item_trailmix.png-4f1b4ecb06216c63d7a6bf81f660d06a.ctex"]
+source_file="res://media/sprites/UI/Items/spr_ui_item_trailmix.png"
+dest_files=["res://.godot/imported/spr_ui_item_trailmix.png-1ad219b1bf0598b17f7b937187881270.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duccdhrbcrr0"
-path="res://.godot/imported/tex_structure_dumpster.png-f6740914c3a26e36517ae517dae1532e.ctex"
+path="res://.godot/imported/tex_structure_dumpster.png-d99ac1387f4514421833d215170e2465.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Structures/tex_structure_dumpster.png"
-dest_files=["res://.godot/imported/tex_structure_dumpster.png-f6740914c3a26e36517ae517dae1532e.ctex"]
+source_file="res://media/textures/Objects/Structures/tex_structure_dumpster.png"
+dest_files=["res://.godot/imported/tex_structure_dumpster.png-d99ac1387f4514421833d215170e2465.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbrhei8kus4nd"
-path="res://.godot/imported/tex_env_oob_mesas.png-13258c8e2ae11fbf540e21374b2e9251.ctex"
+path="res://.godot/imported/tex_env_oob_mesas.png-3af0fb071e1647f6da1e696c92fd71e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Environment/tex_env_oob_mesas.png"
-dest_files=["res://.godot/imported/tex_env_oob_mesas.png-13258c8e2ae11fbf540e21374b2e9251.ctex"]
+source_file="res://media/textures/Environment/tex_env_oob_mesas.png"
+dest_files=["res://.godot/imported/tex_env_oob_mesas.png-3af0fb071e1647f6da1e696c92fd71e7.ctex"]
 
 [params]
 

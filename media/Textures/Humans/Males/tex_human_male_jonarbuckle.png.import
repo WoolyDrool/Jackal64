@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coclhadglp0ql"
-path="res://.godot/imported/tex_human_male_jonarbuckle.png-f68d66e9f4e3ac2fbeb088b8bcd09385.ctex"
+path="res://.godot/imported/tex_human_male_jonarbuckle.png-b3642b30e05e5c3db3eee9e77b93eda4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Humans/Males/tex_human_male_jonarbuckle.png"
-dest_files=["res://.godot/imported/tex_human_male_jonarbuckle.png-f68d66e9f4e3ac2fbeb088b8bcd09385.ctex"]
+source_file="res://media/textures/Humans/Males/tex_human_male_jonarbuckle.png"
+dest_files=["res://.godot/imported/tex_human_male_jonarbuckle.png-b3642b30e05e5c3db3eee9e77b93eda4.ctex"]
 
 [params]
 

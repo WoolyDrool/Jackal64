@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlg21s25rhv0w"
-path="res://.godot/imported/tex_structure_kiosk_glasspane.png-6992ccc1c24975362b78b10410746961.ctex"
+path="res://.godot/imported/tex_structure_kiosk_glasspane.png-5c63de395ca7ddd6a04d2905c257d207.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Structures/tex_structure_kiosk_glasspane.png"
-dest_files=["res://.godot/imported/tex_structure_kiosk_glasspane.png-6992ccc1c24975362b78b10410746961.ctex"]
+source_file="res://media/textures/Objects/Structures/tex_structure_kiosk_glasspane.png"
+dest_files=["res://.godot/imported/tex_structure_kiosk_glasspane.png-5c63de395ca7ddd6a04d2905c257d207.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kvytn130taom"
-path="res://.godot/imported/spr_UI_vehicles_speedometerDial.png-a20703311717aefbb0aecf2fe0402ae7.ctex"
+path="res://.godot/imported/spr_UI_vehicles_speedometerDial.png-b7a1f72fa577ca3d955914a758c95655.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Vehicles/spr_UI_vehicles_speedometerDial.png"
-dest_files=["res://.godot/imported/spr_UI_vehicles_speedometerDial.png-a20703311717aefbb0aecf2fe0402ae7.ctex"]
+source_file="res://media/sprites/UI/Vehicles/spr_UI_vehicles_speedometerDial.png"
+dest_files=["res://.godot/imported/spr_UI_vehicles_speedometerDial.png-b7a1f72fa577ca3d955914a758c95655.ctex"]
 
 [params]
 

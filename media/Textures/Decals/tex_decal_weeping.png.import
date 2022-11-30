@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gej5jbaxj71a"
-path="res://.godot/imported/tex_decal_weeping.png-da02d41a77525f59cbf509b068b29728.ctex"
+path="res://.godot/imported/tex_decal_weeping.png-0b26a60be1f574cf50f62c4b1f6ef608.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Decals/tex_decal_weeping.png"
-dest_files=["res://.godot/imported/tex_decal_weeping.png-da02d41a77525f59cbf509b068b29728.ctex"]
+source_file="res://media/textures/Decals/tex_decal_weeping.png"
+dest_files=["res://.godot/imported/tex_decal_weeping.png-0b26a60be1f574cf50f62c4b1f6ef608.ctex"]
 
 [params]
 

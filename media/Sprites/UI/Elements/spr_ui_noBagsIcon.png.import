@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://glghahqyg6s7"
-path="res://.godot/imported/spr_ui_noBagsIcon.png-e9ff97b7440c53a8c8e2a26f4699823e.ctex"
+path="res://.godot/imported/spr_ui_noBagsIcon.png-c5ccd96a1d9ded4a6804ac1a9cb14019.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Elements/spr_ui_noBagsIcon.png"
-dest_files=["res://.godot/imported/spr_ui_noBagsIcon.png-e9ff97b7440c53a8c8e2a26f4699823e.ctex"]
+source_file="res://media/sprites/UI/Elements/spr_ui_noBagsIcon.png"
+dest_files=["res://.godot/imported/spr_ui_noBagsIcon.png-c5ccd96a1d9ded4a6804ac1a9cb14019.ctex"]
 
 [params]
 

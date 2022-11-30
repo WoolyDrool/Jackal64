@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdoudiwndytl8"
-path="res://.godot/imported/tex_structure_forestsundial.png-846535533a2fde15bb929fa2679880aa.ctex"
+path="res://.godot/imported/tex_structure_forestsundial.png-78a8df42ef0cf4713e3bb0ff4e996537.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Structures/tex_structure_forestsundial.png"
-dest_files=["res://.godot/imported/tex_structure_forestsundial.png-846535533a2fde15bb929fa2679880aa.ctex"]
+source_file="res://media/textures/Objects/Structures/tex_structure_forestsundial.png"
+dest_files=["res://.godot/imported/tex_structure_forestsundial.png-78a8df42ef0cf4713e3bb0ff4e996537.ctex"]
 
 [params]
 

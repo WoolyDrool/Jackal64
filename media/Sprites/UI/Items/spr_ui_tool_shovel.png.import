@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbhao2qkw4tyt"
-path="res://.godot/imported/spr_ui_tool_shovel.png-e9f85ef1dcf4e22022b4abfaf17a7c80.ctex"
+path="res://.godot/imported/spr_ui_tool_shovel.png-108c2ae459d02d37bce74cbcaa9d2233.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Items/spr_ui_tool_shovel.png"
-dest_files=["res://.godot/imported/spr_ui_tool_shovel.png-e9f85ef1dcf4e22022b4abfaf17a7c80.ctex"]
+source_file="res://media/sprites/UI/Items/spr_ui_tool_shovel.png"
+dest_files=["res://.godot/imported/spr_ui_tool_shovel.png-108c2ae459d02d37bce74cbcaa9d2233.ctex"]
 
 [params]
 

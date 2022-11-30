@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b6es600y2y77t"
-path="res://.godot/imported/NewYork.otf-d549c48847b28881f78558d3793a9d04.fontdata"
+path="res://.godot/imported/NewYork.otf-bd94354d8b26f937360b53619f423cda.fontdata"
 
 [deps]
 
-source_file="res://media/Fonts/NewYork.otf"
-dest_files=["res://.godot/imported/NewYork.otf-d549c48847b28881f78558d3793a9d04.fontdata"]
+source_file="res://media/fonts/NewYork.otf"
+dest_files=["res://.godot/imported/NewYork.otf-bd94354d8b26f937360b53619f423cda.fontdata"]
 
 [params]
 

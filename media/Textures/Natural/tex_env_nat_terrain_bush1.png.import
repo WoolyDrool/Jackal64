@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg6ywhfoe5dxk"
-path="res://.godot/imported/tex_env_nat_terrain_bush1.png-aa8af32838c49bec941ae21105859aee.ctex"
+path="res://.godot/imported/tex_env_nat_terrain_bush1.png-63315746afde6e028d56cc1b928c564a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Natural/tex_env_nat_terrain_bush1.png"
-dest_files=["res://.godot/imported/tex_env_nat_terrain_bush1.png-aa8af32838c49bec941ae21105859aee.ctex"]
+source_file="res://media/textures/Natural/tex_env_nat_terrain_bush1.png"
+dest_files=["res://.godot/imported/tex_env_nat_terrain_bush1.png-63315746afde6e028d56cc1b928c564a.ctex"]
 
 [params]
 

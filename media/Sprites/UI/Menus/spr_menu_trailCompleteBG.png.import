@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yne54uj8l07m"
-path="res://.godot/imported/spr_menu_trailCompleteBG.png-1e2c6d9306b0a75e04c0797d6b9cc23c.ctex"
+path="res://.godot/imported/spr_menu_trailCompleteBG.png-b9ca874235187e148011e930aa490567.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Menus/spr_menu_trailCompleteBG.png"
-dest_files=["res://.godot/imported/spr_menu_trailCompleteBG.png-1e2c6d9306b0a75e04c0797d6b9cc23c.ctex"]
+source_file="res://media/sprites/UI/Menus/spr_menu_trailCompleteBG.png"
+dest_files=["res://.godot/imported/spr_menu_trailCompleteBG.png-b9ca874235187e148011e930aa490567.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d04kjql54s8to"
-path="res://.godot/imported/tex_env_b_motel_catSign.png-6269c5bbb4079715d2aacb5a1db71a8a.ctex"
+path="res://.godot/imported/tex_env_b_motel_catSign.png-2b2e7182f35d2aa3b6550c5c0d01e054.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Environment/Buildings/tex_env_b_motel_catSign.png"
-dest_files=["res://.godot/imported/tex_env_b_motel_catSign.png-6269c5bbb4079715d2aacb5a1db71a8a.ctex"]
+source_file="res://media/textures/Environment/Buildings/tex_env_b_motel_catSign.png"
+dest_files=["res://.godot/imported/tex_env_b_motel_catSign.png-2b2e7182f35d2aa3b6550c5c0d01e054.ctex"]
 
 [params]
 

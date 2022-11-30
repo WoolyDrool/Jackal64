@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b810x3kxs48e2"
-path="res://.godot/imported/spr_UI_vehicles_gearBoxBackground.png-41ccf8e242b637b9e7cfc7de5ce7c527.ctex"
+path="res://.godot/imported/spr_UI_vehicles_gearBoxBackground.png-aad24d87542ae3db7e5fbfe9606852c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Sprites/UI/Vehicles/spr_UI_vehicles_gearBoxBackground.png"
-dest_files=["res://.godot/imported/spr_UI_vehicles_gearBoxBackground.png-41ccf8e242b637b9e7cfc7de5ce7c527.ctex"]
+source_file="res://media/sprites/UI/Vehicles/spr_UI_vehicles_gearBoxBackground.png"
+dest_files=["res://.godot/imported/spr_UI_vehicles_gearBoxBackground.png-aad24d87542ae3db7e5fbfe9606852c1.ctex"]
 
 [params]
 

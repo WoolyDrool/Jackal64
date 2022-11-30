@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhjgb62t015gl"
-path="res://.godot/imported/tex_decal_loveheart.png-4aefc326c70a9168a55262c351d914ae.ctex"
+path="res://.godot/imported/tex_decal_loveheart.png-8d82ea03d0fef6dcfd8f92239a4408e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Decals/tex_decal_loveheart.png"
-dest_files=["res://.godot/imported/tex_decal_loveheart.png-4aefc326c70a9168a55262c351d914ae.ctex"]
+source_file="res://media/textures/Decals/tex_decal_loveheart.png"
+dest_files=["res://.godot/imported/tex_decal_loveheart.png-8d82ea03d0fef6dcfd8f92239a4408e5.ctex"]
 
 [params]
 

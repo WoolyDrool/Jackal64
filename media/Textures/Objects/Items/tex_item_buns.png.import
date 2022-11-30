@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm5v7jhiq8scc"
-path="res://.godot/imported/tex_item_buns.png-825922b8352742532454ee6603dfa6c3.ctex"
+path="res://.godot/imported/tex_item_buns.png-94aec64d5a9e052c43a9ea6df4c09fba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Items/tex_item_buns.png"
-dest_files=["res://.godot/imported/tex_item_buns.png-825922b8352742532454ee6603dfa6c3.ctex"]
+source_file="res://media/textures/Objects/Items/tex_item_buns.png"
+dest_files=["res://.godot/imported/tex_item_buns.png-94aec64d5a9e052c43a9ea6df4c09fba.ctex"]
 
 [params]
 

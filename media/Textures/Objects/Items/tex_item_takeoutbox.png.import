@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cycmxo7ml16it"
-path="res://.godot/imported/tex_item_takeoutbox.png-a8ab42a478a376fffaf71fcef87171cd.ctex"
+path="res://.godot/imported/tex_item_takeoutbox.png-5efc715ca5ecd86c90723e5c98dc5043.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Items/tex_item_takeoutbox.png"
-dest_files=["res://.godot/imported/tex_item_takeoutbox.png-a8ab42a478a376fffaf71fcef87171cd.ctex"]
+source_file="res://media/textures/Objects/Items/tex_item_takeoutbox.png"
+dest_files=["res://.godot/imported/tex_item_takeoutbox.png-5efc715ca5ecd86c90723e5c98dc5043.ctex"]
 
 [params]
 

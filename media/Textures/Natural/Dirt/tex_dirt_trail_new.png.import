@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjikcif5xoo01"
-path="res://.godot/imported/tex_dirt_trail_new.png-80413dbae1d310e080a9fb212aa8daaf.ctex"
+path="res://.godot/imported/tex_dirt_trail_new.png-551dc2e34e9a3b558bcc5577c25311bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Natural/Dirt/tex_dirt_trail_new.png"
-dest_files=["res://.godot/imported/tex_dirt_trail_new.png-80413dbae1d310e080a9fb212aa8daaf.ctex"]
+source_file="res://media/textures/Natural/Dirt/tex_dirt_trail_new.png"
+dest_files=["res://.godot/imported/tex_dirt_trail_new.png-551dc2e34e9a3b558bcc5577c25311bf.ctex"]
 
 [params]
 

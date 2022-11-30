@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnxgyd0xuqsq6"
-path="res://.godot/imported/tex_item_bandages.png-73ecea57203615a485e4334b09a52d12.ctex"
+path="res://.godot/imported/tex_item_bandages.png-46d151673410ab67f021d1e4a9174452.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Objects/Items/tex_item_bandages.png"
-dest_files=["res://.godot/imported/tex_item_bandages.png-73ecea57203615a485e4334b09a52d12.ctex"]
+source_file="res://media/textures/Objects/Items/tex_item_bandages.png"
+dest_files=["res://.godot/imported/tex_item_bandages.png-46d151673410ab67f021d1e4a9174452.ctex"]
 
 [params]
 

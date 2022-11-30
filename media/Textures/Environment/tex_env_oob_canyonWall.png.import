@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx0jw7ug33pi"
-path="res://.godot/imported/tex_env_oob_canyonWall.png-5d1d55fcb42118d0b2141296a2a1b193.ctex"
+path="res://.godot/imported/tex_env_oob_canyonWall.png-64d7267ed419483c14d4f800a21dbba7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/Textures/Environment/tex_env_oob_canyonWall.png"
-dest_files=["res://.godot/imported/tex_env_oob_canyonWall.png-5d1d55fcb42118d0b2141296a2a1b193.ctex"]
+source_file="res://media/textures/Environment/tex_env_oob_canyonWall.png"
+dest_files=["res://.godot/imported/tex_env_oob_canyonWall.png-64d7267ed419483c14d4f800a21dbba7.ctex"]
 
 [params]
 
