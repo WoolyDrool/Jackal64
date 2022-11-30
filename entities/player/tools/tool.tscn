@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr8i6ui41hnqu"]
+
+[ext_resource type="Script" path="res://entities/player/tools/tool.gd" id="1_5xmwn"]
+
+[node name="Tool" type="Node3D"]
+script = ExtResource("1_5xmwn")
