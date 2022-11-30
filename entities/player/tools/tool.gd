@@ -19,11 +19,11 @@ func _process_input():
 	pass
 
 # Actions
-func _tool_primary():
+func _tool_primary() -> void:
 	pass
 
-func _tool_secondary():
+func _tool_secondary() -> void:
 	pass
 
-func _tool_tertiary():
+func _tool_tertiary() -> void:
 	pass
