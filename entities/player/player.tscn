@@ -36,6 +36,8 @@ script = ExtResource("2_2ilhx")
 
 [node name="Toolbelt" type="Node3D" parent="Neck"]
 
+[node name="Hatchet" parent="Neck/Toolbelt" instance=ExtResource("3_4ghhx")]
+
 [node name="MainUI" parent="." instance=ExtResource("2_xevq3")]
 grow_horizontal = 2
 grow_vertical = 2
