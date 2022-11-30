@@ -8,6 +8,8 @@
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_61xkj")
+MAX_SPEED = 8
+JUMP_SPEED = 9
 MOUSE_SENSITIVITY = 0.1
 
 [node name="Body" type="CollisionShape3D" parent="."]
