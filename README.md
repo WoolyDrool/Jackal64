@@ -3,4 +3,4 @@ This is the repository for the engine port version of the game Foxspur Canyon (f
 
 ## Links
 ###### Main site: https://woolydrool.itch.io/foxspur-canyon
-###### Trello board: https://trello.com/b/B1hmXKSk/foxspur-canyon-development
+###### Trello board: https://trello.com/b/WF9ahjQM
