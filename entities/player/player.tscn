@@ -26,6 +26,7 @@ shape = SubResource("BoxShape3D_02v85")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Neck"]
+current = true
 fov = 90.0
 
 [node name="RayCast" type="RayCast3D" parent="Neck"]
