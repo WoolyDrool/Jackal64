@@ -9,12 +9,18 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "Area3D",
+"class": &"GameItemObjective",
+"language": &"GDScript",
+"path": "res://entities/objects/objective_piece.gd"
+}, {
 "base": "Node3D",
 "class": &"UsableTool",
 "language": &"GDScript",
 "path": "res://entities/player/tools/tool.gd"
 }]
 _global_script_class_icons={
+"GameItemObjective": "",
 "UsableTool": ""
 }
 
@@ -28,6 +34,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 EventBus="*res://globals/event_bus.gd"
+PlayerInventory="*res://entities/player/player_inventory.gd"
 
 [display]
 
