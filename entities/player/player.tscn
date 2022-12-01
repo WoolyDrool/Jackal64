@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dpc2xjylcdgse"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_61xkj"]
-[ext_resource type="Script" path="res://entities/player/PlayerRayCast.gd" id="2_2ilhx"]
+[ext_resource type="Script" path="res://entities/player/player_camera.gd" id="2_ecwpp"]
 [ext_resource type="PackedScene" uid="uid://cfuum0m1fdiet" path="res://ui/main_ui.tscn" id="2_xevq3"]
 [ext_resource type="PackedScene" uid="uid://ctcf4y73mc6fd" path="res://entities/player/tools/tool_hatchet.tscn" id="3_4ghhx"]
 
@@ -27,17 +27,40 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 [node name="Camera3D" type="Camera3D" parent="Neck"]
 current = true
 fov = 90.0
+script = ExtResource("2_ecwpp")
 
-[node name="RayCast" type="RayCast3D" parent="Neck"]
+[node name="RayCast" type="RayCast3D" parent="Neck/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 target_position = Vector3(0, -2, 0)
+collision_mask = 16
+hit_from_inside = true
+collide_with_areas = true
 debug_shape_custom_color = Color(0.964706, 0.764706, 0, 1)
-script = ExtResource("2_2ilhx")
+
+[node name="Control" type="Control" parent="Neck/Camera3D"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InteractText" type="Label" parent="Neck/Camera3D/Control"]
+offset_right = 40.0
+offset_bottom = 23.0
+auto_translate = false
+text = "Interact Text"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Toolbelt" type="Node3D" parent="Neck"]
 
 [node name="Hatchet" parent="Neck/Toolbelt" instance=ExtResource("3_4ghhx")]
 
 [node name="MainUI" parent="." instance=ExtResource("2_xevq3")]
-grow_horizontal = 2
-grow_vertical = 2
