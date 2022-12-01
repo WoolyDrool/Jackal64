@@ -24,7 +24,7 @@ func _process(delta):
 				canGet = false
 			
 			if canGet:
-				interactLabel.text = ("Grab " + str(x))
+				interactLabel.text = ("Grab " + str(x.itemName))
 				if Input.is_action_just_pressed("interact_general"):
 					x._on_grab()
 					x.queue_free()
