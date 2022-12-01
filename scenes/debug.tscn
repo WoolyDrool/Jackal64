@@ -23,7 +23,7 @@ sky = SubResource("Sky_3y8ud")
 [node name="Debug Level" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_bei8j")]
-transform = Transform3D(7.834, 0, 0, 0, 0.979, 0, 0, 0, 8, 0, 3, 0)
+transform = Transform3D(-3.42435e-07, 0, 8, 0, 0.979, 0, -7.834, 0, -3.49691e-07, 0, 3, 0)
 
 [node name="Ground" type="StaticBody3D" parent="."]
 transform = Transform3D(1.79645, 0, 0, 0, 0.998025, 0, 0, 0, 1.99605, 0, 0, 0)
@@ -45,4 +45,4 @@ transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 
 shadow_enabled = true
 
 [node name="ObjectivePiece" parent="." instance=ExtResource("2_hwch6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 0)
+transform = Transform3D(0.991356, -0.131201, 0, 0.131201, 0.991356, 0, 0, 0, 1, -4, 2, 0)
