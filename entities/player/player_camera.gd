@@ -1,6 +1,6 @@
 extends Camera3D
 
-var raycaster 
+@onready var raycaster 
 var interactLabel : Label
 var canGet
 var x : CollisionObject3D
@@ -8,7 +8,7 @@ var x : CollisionObject3D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	raycaster = $"RayCast"
-	interactLabel = $"Control/InteractText"
+	interactLabel = $"ImmediateUI/InteractText"
 	pass # Replace with function body.
 
 
