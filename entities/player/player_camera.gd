@@ -1,7 +1,7 @@
 extends Camera3D
 
-var raycaster
-var interactLabel
+var raycaster 
+var interactLabel : Label
 var canGet
 var x : CollisionObject3D
 
