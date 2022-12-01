@@ -6,8 +6,8 @@ Foxspur 2.0 Design Changes
 - More emphasis on in-world cleaning mini games/challenges
 - Smaller more tightly designed levels (campsites, rec areas etc)
 - Reduced scope overall
-- Trash is now divided up between recycling and non and deposit methods / rewards are different for each.
-- Penalties for incorrect depositing
+- Trash is now divided up between recycling and non and deposit methods / rewards are different for each
+with penalties for incorrect depositing
 
 Minigame Ideas
 - Gate unlocking
