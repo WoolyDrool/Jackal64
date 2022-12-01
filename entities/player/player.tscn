@@ -53,6 +53,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="InteractText" type="Label" parent="Neck/Camera3D/Control"]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 auto_translate = false
