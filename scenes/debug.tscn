@@ -1,12 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://pgkuu6wfwqop"]
+[gd_scene load_steps=8 format=3 uid="uid://pgkuu6wfwqop"]
 
 [ext_resource type="PackedScene" uid="uid://dpc2xjylcdgse" path="res://entities/player/player.tscn" id="1_bei8j"]
+[ext_resource type="PackedScene" uid="uid://cgdfwqdxp5tin" path="res://entities/objective_piece.tscn" id="2_hwch6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_riu7h"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_qqe6s"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d60at"]
+sky_top_color = Color(0.164706, 0.462745, 0.721569, 1)
+sky_horizon_color = Color(0.509804, 0.6, 0.619608, 1)
+sky_curve = 0.0222977
+ground_bottom_color = Color(0.337255, 0.321569, 0.317647, 1)
 
 [sub_resource type="Sky" id="Sky_3y8ud"]
 sky_material = SubResource("ProceduralSkyMaterial_d60at")
@@ -38,3 +43,6 @@ environment = SubResource("Environment_f12el")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 shadow_enabled = true
+
+[node name="ObjectivePiece" parent="." instance=ExtResource("2_hwch6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2, 0)
