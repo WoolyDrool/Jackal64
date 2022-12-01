@@ -5,7 +5,7 @@ extends CharacterBody3D
 const GRAVITY = -24.8
 var vel = Vector3()
 @export var MAX_SPEED = 20
-@export var JUMP_SPEED = 18
+const JUMP_SPEED = 18
 const ACCEL = 4.5
 
 var dir = Vector3()
