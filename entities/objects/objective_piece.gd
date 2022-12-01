@@ -1,6 +1,9 @@
 extends Area3D
 
-var recycling : bool = false
+class_name GameItemObjective
+
+@export var itemName : String = "Default"
+@export var recycling : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
