@@ -1,5 +1,7 @@
 extends Area3D
 
+var recycling : bool = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#EventBus.connect("was_collected", self, )
@@ -11,5 +13,5 @@ func _process(delta):
 	pass
 
 func _on_grab():
-	EventBus.emit_signal("was_collected")
+	EventBus.emit_signal("E_O_COLLECT")
 	queue_free()
