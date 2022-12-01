@@ -5,3 +5,4 @@ extends Node
 #warning-ignore:unused_signal
 
 # List of published signals
+signal was_collected
