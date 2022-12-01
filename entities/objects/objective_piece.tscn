@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgdfwqdxp5tin"]
+[gd_scene load_steps=4 format=3 uid="uid://cxdln633ainwj"]
 
-[ext_resource type="Script" path="res://entities/objective_piece.gd" id="1_bnhk5"]
+[ext_resource type="Script" path="res://entities/objects/objective_piece.gd" id="1_u7rre"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7ej0k"]
 
@@ -9,7 +9,7 @@
 [node name="ObjectivePiece" type="Area3D"]
 disable_mode = 2
 collision_layer = 16
-script = ExtResource("1_bnhk5")
+script = ExtResource("1_u7rre")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.285377, 0, 0, 0, 0.285377, 0, 0, 0, 0.285377, 0, 0, 0)
