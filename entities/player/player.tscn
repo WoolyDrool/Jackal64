@@ -38,7 +38,7 @@ hit_from_inside = true
 collide_with_areas = true
 debug_shape_custom_color = Color(0.964706, 0.764706, 0, 1)
 
-[node name="Control" type="Control" parent="Neck/Camera3D"]
+[node name="ImmediateUI" type="Control" parent="Neck/Camera3D"]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -52,7 +52,7 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="InteractText" type="Label" parent="Neck/Camera3D/Control"]
+[node name="InteractText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
