@@ -16,5 +16,8 @@ func _process(delta):
 	pass
 
 func _on_grab():
-	EventBus.emit_signal("E_O_COLLECT")
+	if !recycling:
+		EventBus.E_O_COLLECT_TRASH.emit()
+	else:
+		EventBus.E_O_COLLECT_RECYCLE.emit()
 	queue_free()
