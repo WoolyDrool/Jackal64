@@ -12,3 +12,4 @@ func _process(delta):
 
 func _on_grab():
 	EventBus.emit_signal("was_collected")
+	queue_free()

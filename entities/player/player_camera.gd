@@ -26,5 +26,4 @@ func _process(delta):
 	if Input.is_action_just_pressed("interact_general") && canGet:
 		if x != null:
 			x._on_grab()
-			x.queue_free()
 			x = null
