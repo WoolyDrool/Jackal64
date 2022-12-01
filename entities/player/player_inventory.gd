@@ -11,3 +11,14 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func add_item(item : GameItemObjective):
+	if item.recycling:
+		level_recycle_count += 1
+	elif !item.recycling:
+		level_trash_count += 1
+	print_debug("Added item")
+	EventBus.G_UI_UPDATECOUNTS.emit()
+	pass
+
+
