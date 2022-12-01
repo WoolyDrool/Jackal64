@@ -10,9 +10,14 @@ var recLabel
 func _ready():
 	trashLabel = $"TrashCount"
 	recLabel = $"RecCount"
+	
+	EventBus.connect("was_collected", _update_label)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
+func _update_label() -> void:
+	trashCount += 1
+	trashLabel.set_text("Trash: " + trashCount)
