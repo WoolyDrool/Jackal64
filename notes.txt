@@ -16,3 +16,7 @@ Minigame Ideas
 - Tying trash bag
 - Can crushing
 - Chopping firewood
+
+
+Misc Ideas
+- Minigame hard mode option. Makes minigames require more accurate mouse movements or faster response
