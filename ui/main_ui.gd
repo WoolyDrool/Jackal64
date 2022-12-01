@@ -20,4 +20,4 @@ func _process(delta):
 
 func _update_label() -> void:
 	trashCount += 1
-	trashLabel.set_text("Trash: " + trashCount)
+	trashLabel.text = "Trash - " + str(trashCount)
