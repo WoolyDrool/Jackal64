@@ -11,13 +11,16 @@ func _ready():
 	trashLabel = $"TrashCount"
 	recLabel = $"RecCount"
 	
-	EventBus.connect("E_O_COLLECT", _update_label)
+	EventBus.E_O_COLLECT_TRASH.connect(_update_label_trash)
+	EventBus.E_O_COLLECT_RECYCLE.connect(_update_label_recycle)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
-func _update_label() -> void:
-	trashCount += 1
-	trashLabel.text = "Trash - " + str(trashCount)
+func _update_label_trash() -> void:
+	trashLabel.text = "Trash - " + str(PlayerInventory.level_trash_count)
+
+func _update_label_recycle() -> void:
+	recLabel.text = "Recycle - " + str(PlayerInventory.level_recycle_count)
