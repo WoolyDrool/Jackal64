@@ -2,21 +2,23 @@
 
 extends CharacterBody3D
 
-const GRAVITY = -24.8
-var vel = Vector3()
+# Controller variables
 @export var MAX_SPEED = 20
 @export var JUMP_SPEED = 18
 @export var ACCEL = 4.5
+@export var DEACCEL= 16
+@export var MAX_SLOPE_ANGLE = 40
+@export var MOUSE_SENSITIVITY = 0.05
 
+# Internal variables
+const GRAVITY = -24.8
+var vel = Vector3()
 var dir = Vector3()
 
-const DEACCEL= 16
-const MAX_SLOPE_ANGLE = 40
 
+# Refs
 var camera
 var rotation_helper
-
-@export var MOUSE_SENSITIVITY = 0.05
 
 func _ready():
 	camera = $Neck/Camera3D
@@ -29,7 +31,6 @@ func _physics_process(delta):
 	process_movement(delta)
 
 func process_input(delta):
-
 	# ----------------------------------
 	# Walking
 	dir = Vector3()
@@ -91,17 +92,11 @@ func process_movement(delta):
 	vel.x = hvel.x
 	vel.z = hvel.z
 	
-	#move_and_slide()
 	velocity = vel
 	move_and_slide()
-	#vel = move_and_slide(vel, Vector3(0, 1, 0), 0.05, 4, deg_to_rad(MAX_SLOPE_ANGLE))
 
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		camera.rotate_x(deg_to_rad(-event.relative.y * MOUSE_SENSITIVITY))
 		rotation_helper.rotate_y(deg_to_rad(event.relative.x * MOUSE_SENSITIVITY * -1))
-
-		#var camera_rot = rotation_helper.rotation
-		#.x = clamp(camera_rot.x, -90, 90)
-		#rotation_helper.rotation = camera_rot
 		
