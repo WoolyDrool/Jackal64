@@ -7,6 +7,8 @@
 [sub_resource type="SphereMesh" id="SphereMesh_ctbtc"]
 
 [node name="ObjectivePiece" type="Area3D"]
+disable_mode = 2
+collision_layer = 16
 script = ExtResource("1_bnhk5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
