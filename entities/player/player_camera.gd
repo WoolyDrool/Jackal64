@@ -31,5 +31,6 @@ func _process(delta):
 					canGet = false
 	else:
 		interactLabel.text = ""
+		pass
 
 
