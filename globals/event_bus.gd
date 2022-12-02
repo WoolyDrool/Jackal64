@@ -9,10 +9,15 @@ extends Node
 # modifiers: O (Objective), UI (User Interface), T (Trail)
 
 # List of published signals
+
+# ENTITIES ----
 signal E_O_COLLECT_TRASH
 signal E_O_COLLECT_RECYCLE
 
+# GAME ----
+# ---- UI
 signal G_UI_UPDATE_COUNTS
-
+# ---- TRAILS
 signal G_T_BEGIN_TRAIL
 signal G_T_END_TRAIL
+signal G_T_UPDATE_OBJECTIVE_COUNT(newCount)
