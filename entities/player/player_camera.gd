@@ -3,7 +3,7 @@ extends Camera3D
 @onready var raycaster 
 var interactLabel : Label
 var canGet
-var x : CollisionObject3D
+var x 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
