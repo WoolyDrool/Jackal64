@@ -31,8 +31,8 @@ func _update_counts():
 
 func _update_label_trash() -> void:
 	trashLabel.text = "Trash - " + str(PlayerInventory.level_trash_count)
-	print("Updated trash label")
+	#print("Updated trash label")
 
 func _update_label_recycle() -> void:
 	recLabel.text = "Recycle - " + str(PlayerInventory.level_recycle_count)
-	print("Updated recycle label")
+	#print("Updated recycle label")
