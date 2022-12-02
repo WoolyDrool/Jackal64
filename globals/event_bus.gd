@@ -9,7 +9,7 @@ extends Node
 
 # Style Guide ------------------
 # prefixes: E (Entity) , P (Player) , G (Game), 
-# modifiers: O (Objective), UI (User Interface), T (Trail), RAY(Raycasts)
+# modifiers: O (Objective), UI (User Interface), T (Trail)
 
 # List of published signals
 
@@ -26,5 +26,3 @@ signal G_T_BEGIN_TRAIL
 signal G_T_END_TRAIL
 signal G_T_UPDATE_OBJECTIVE_COUNT(newCount)
 
-# RAYS ----
-signal P_RAY_INTERACT_QUERY
