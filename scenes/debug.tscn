@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cuw0oa2eo3x8j"]
+[gd_scene load_steps=9 format=3 uid="uid://cuw0oa2eo3x8j"]
 
 [ext_resource type="PackedScene" uid="uid://dpc2xjylcdgse" path="res://entities/player/player.tscn" id="1_bei8j"]
-[ext_resource type="PackedScene" uid="uid://c5rs3gdf8h1ie" path="res://entities/objects/objective_piece.tscn" id="2_hwch6"]
+[ext_resource type="PackedScene" uid="uid://dmvrc8go2uth7" path="res://entities/objects/recycle_piece.tscn" id="2_pwn08"]
+[ext_resource type="PackedScene" uid="uid://dc6wcfus87nq6" path="res://entities/objects/trash_piece.tscn" id="3_flo3s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_riu7h"]
 
@@ -44,10 +45,43 @@ environment = SubResource("Environment_f12el")
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 shadow_enabled = true
 
-[node name="ObjectivePiece" parent="." instance=ExtResource("2_hwch6")]
-transform = Transform3D(0.991356, -0.131201, 0, 0.131201, 0.991356, 0, 0, 0, 1, -4, 2, 2)
+[node name="Trash Container" type="Node3D" parent="."]
 
-[node name="ObjectivePiece2" parent="." instance=ExtResource("2_hwch6")]
-transform = Transform3D(0.991356, -0.131201, 0, 0.131201, 0.991356, 0, 0, 0, 1, -4, 2, -2)
-itemName = "Recycle"
-recycling = true
+[node name="Recycle" parent="Trash Container" instance=ExtResource("2_pwn08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3, 0)
+
+[node name="Recycle2" parent="Trash Container" instance=ExtResource("2_pwn08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 4)
+
+[node name="Recycle3" parent="Trash Container" instance=ExtResource("2_pwn08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3, 0)
+
+[node name="Recycle4" parent="Trash Container" instance=ExtResource("2_pwn08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, 7)
+
+[node name="Recycle5" parent="Trash Container" instance=ExtResource("2_pwn08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 10)
+
+[node name="Recycle6" parent="Trash Container" instance=ExtResource("2_pwn08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, 7)
+
+[node name="Recycle7" parent="Trash Container" instance=ExtResource("2_pwn08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -20, 7)
+
+[node name="Trash" parent="Trash Container" instance=ExtResource("3_flo3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -9)
+
+[node name="Trash2" parent="Trash Container" instance=ExtResource("3_flo3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -6)
+
+[node name="Trash3" parent="Trash Container" instance=ExtResource("3_flo3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -5)
+
+[node name="Trash4" parent="Trash Container" instance=ExtResource("3_flo3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -12)
+
+[node name="Trash5" parent="Trash Container" instance=ExtResource("3_flo3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, 5)
+
+[node name="Trash6" parent="Trash Container" instance=ExtResource("3_flo3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 10)
