@@ -29,7 +29,7 @@ _global_script_class_icons={
 config/name="Foxspur Gd"
 run/main_scene="res://scenes/debug.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://media/sprites/icon.svg"
 
 [autoload]
 
