@@ -8,6 +8,17 @@ var toolName = "Default"
 var isEquip : bool = false
 var canUSe : bool = true
 
+var ray
+var primaryActionTimer
+var secondaryActionTimer
+var tertiaryActionTimer
+
+func _ready():
+	ray = $"Raycaster"
+	primaryActionTimer = $"ToolPrimaryCooldown"
+	secondaryActionTimer = $"ToolSecondaryCooldown"
+	tertiaryActionTimer = $"ToolTertiaryCooldown"
+
 func _process(delta):
 	_process_input()
 	pass
