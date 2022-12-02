@@ -4,8 +4,8 @@
 [ext_resource type="Script" path="res://systems/TrailTrashContainer.gd" id="2_8hoaa"]
 [ext_resource type="PackedScene" uid="uid://dmvrc8go2uth7" path="res://entities/objects/recycle_piece.tscn" id="2_pwn08"]
 [ext_resource type="PackedScene" uid="uid://dc6wcfus87nq6" path="res://entities/objects/trash_piece.tscn" id="3_flo3s"]
-[ext_resource type="Script" path="res://systems/TrailManager.gd" id="5_boewd"]
-[ext_resource type="Script" path="res://globals/Globals.gd" id="6_v6t1k"]
+[ext_resource type="PackedScene" uid="uid://duno81k1j5wuq" path="res://globals/trail_manager.tscn" id="5_17nia"]
+[ext_resource type="PackedScene" uid="uid://yhs843m8hbwk" path="res://globals/globals.tscn" id="6_8hm4n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_riu7h"]
 
@@ -32,6 +32,7 @@ MAX_SLOPE_ANGLE = 60
 
 [node name="Ground" type="StaticBody3D" parent="."]
 transform = Transform3D(2.06592, 0, 0, 0, 0.998025, 0, 0, 0, 1.99605, 0, 0, 0)
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
 transform = Transform3D(16, 0, 0, 0, 0.1, 0, 0, 0, 16, 0, 0, 0)
@@ -44,6 +45,7 @@ skeleton = NodePath("../..")
 
 [node name="Ground2" type="StaticBody3D" parent="."]
 transform = Transform3D(1.99552, -0.258308, 0, 0.534699, 0.964018, 0, 0, 0, 1.99605, 31, 4, 0)
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground2"]
 transform = Transform3D(16, 0, 0, 0, 0.1, 0, 0, 0, 16, 0, 0, 0)
@@ -61,88 +63,110 @@ environment = SubResource("Environment_f12el")
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 shadow_enabled = true
 
-[node name="TrailManager" type="Node" parent="."]
-script = ExtResource("5_boewd")
-
-[node name="TrailTrashContainer" type="Node3D" parent="TrailManager" groups=["Trails"]]
+[node name="TrailTrashContainer" type="Node3D" parent="." groups=["Trails"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0174894, 0, 0.00172901)
 script = ExtResource("2_8hoaa")
 
-[node name="Recycle" parent="TrailManager/TrailTrashContainer" instance=ExtResource("2_pwn08")]
+[node name="Recycle" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3, 0)
+collision_mask = 1
 
-[node name="Recycle2" parent="TrailManager/TrailTrashContainer" instance=ExtResource("2_pwn08")]
+[node name="Recycle2" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 4)
+collision_mask = 1
 
-[node name="Recycle3" parent="TrailManager/TrailTrashContainer" instance=ExtResource("2_pwn08")]
+[node name="Recycle3" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3, 0)
+collision_mask = 1
 
-[node name="Recycle4" parent="TrailManager/TrailTrashContainer" instance=ExtResource("2_pwn08")]
+[node name="Recycle4" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, 7)
+collision_mask = 1
 
-[node name="Recycle5" parent="TrailManager/TrailTrashContainer" instance=ExtResource("2_pwn08")]
+[node name="Recycle5" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 10)
+collision_mask = 1
 
-[node name="Recycle6" parent="TrailManager/TrailTrashContainer" instance=ExtResource("2_pwn08")]
+[node name="Recycle6" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, 7)
+collision_mask = 1
 
-[node name="Trash" parent="TrailManager/TrailTrashContainer" instance=ExtResource("3_flo3s")]
+[node name="Trash" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -9)
+collision_mask = 1
 
-[node name="Trash2" parent="TrailManager/TrailTrashContainer" instance=ExtResource("3_flo3s")]
+[node name="Trash2" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -6)
+collision_mask = 1
 
-[node name="Trash3" parent="TrailManager/TrailTrashContainer" instance=ExtResource("3_flo3s")]
+[node name="Trash3" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -5)
+collision_mask = 1
 
-[node name="Trash4" parent="TrailManager/TrailTrashContainer" instance=ExtResource("3_flo3s")]
+[node name="Trash4" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -12)
+collision_mask = 1
 
-[node name="Trash5" parent="TrailManager/TrailTrashContainer" instance=ExtResource("3_flo3s")]
+[node name="Trash5" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, 5)
+collision_mask = 1
 
-[node name="Trash6" parent="TrailManager/TrailTrashContainer" instance=ExtResource("3_flo3s")]
+[node name="Trash6" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 10)
+collision_mask = 1
 
-[node name="TrailTrashContainer2" type="Node3D" parent="TrailManager" groups=["Trails"]]
+[node name="TrailTrashContainer2" type="Node3D" parent="." groups=["Trails"]]
 transform = Transform3D(0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 29.0333, 3, 0.00804996)
 script = ExtResource("2_8hoaa")
 
-[node name="Recycle" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("2_pwn08")]
+[node name="Recycle" parent="TrailTrashContainer2" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3, 0)
+collision_mask = 1
 
-[node name="Recycle2" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("2_pwn08")]
+[node name="Recycle2" parent="TrailTrashContainer2" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 4)
+collision_mask = 1
 
-[node name="Recycle3" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("2_pwn08")]
+[node name="Recycle3" parent="TrailTrashContainer2" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3, 0)
+collision_mask = 1
 
-[node name="Recycle4" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("2_pwn08")]
+[node name="Recycle4" parent="TrailTrashContainer2" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, 7)
+collision_mask = 1
 
-[node name="Recycle5" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("2_pwn08")]
+[node name="Recycle5" parent="TrailTrashContainer2" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 10)
+collision_mask = 1
 
-[node name="Recycle6" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("2_pwn08")]
+[node name="Recycle6" parent="TrailTrashContainer2" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, 7)
+collision_mask = 1
 
-[node name="Trash" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("3_flo3s")]
+[node name="Trash" parent="TrailTrashContainer2" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -9)
+collision_mask = 1
 
-[node name="Trash2" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("3_flo3s")]
+[node name="Trash2" parent="TrailTrashContainer2" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -6)
+collision_mask = 1
 
-[node name="Trash3" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("3_flo3s")]
+[node name="Trash3" parent="TrailTrashContainer2" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -5)
+collision_mask = 1
 
-[node name="Trash4" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("3_flo3s")]
+[node name="Trash4" parent="TrailTrashContainer2" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -12)
+collision_mask = 1
 
-[node name="Trash5" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("3_flo3s")]
+[node name="Trash5" parent="TrailTrashContainer2" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, 5)
+collision_mask = 1
 
-[node name="Trash6" parent="TrailManager/TrailTrashContainer2" instance=ExtResource("3_flo3s")]
+[node name="Trash6" parent="TrailTrashContainer2" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 10)
+collision_mask = 1
 
-[node name="Globals" type="Node" parent="."]
-script = ExtResource("6_v6t1k")
+[node name="TrailManager" parent="." instance=ExtResource("5_17nia")]
+
+[node name="Globals" parent="." instance=ExtResource("6_8hm4n")]
