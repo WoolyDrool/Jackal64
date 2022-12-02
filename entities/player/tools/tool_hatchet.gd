@@ -1,11 +1,12 @@
 extends UsableTool
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	_get_nodes()
 
+func _tool_primary() -> void:
+	canPrimary = false
+	if primaryActionTimer:
+		primaryActionTimer.start()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_tool_primary_cooldown_timeout():
+	canPrimary = true

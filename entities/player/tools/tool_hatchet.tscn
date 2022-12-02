@@ -5,3 +5,4 @@
 
 [node name="Hatchet" instance=ExtResource("1_oprhg")]
 script = ExtResource("1_pw6mc")
+primaryActionCooldown = 1.0
