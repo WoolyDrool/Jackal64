@@ -14,4 +14,6 @@ func _on_grab():
 		PlayerInventory.level_recycle_count += 1
 		EventBus.E_O_COLLECT_RECYCLE.emit()
 		print("Collected recycling")
+	
+	EventBus.G_UI_UPDATE_COUNTS.emit()
 	queue_free()
