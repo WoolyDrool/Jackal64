@@ -9,7 +9,9 @@ func _on_grab():
 	if !recycling:
 		PlayerInventory.level_trash_count += 1
 		EventBus.E_O_COLLECT_TRASH.emit()
+		print("Collected trash")
 	else:
 		PlayerInventory.level_recycle_count += 1
 		EventBus.E_O_COLLECT_RECYCLE.emit()
+		print("Collected recycling")
 	queue_free()
