@@ -20,3 +20,5 @@ Minigame Ideas
 
 Misc Ideas
 - Minigame hard mode option. Makes minigames require more accurate mouse movements or faster response
+- Night trails. As kind of a re-introduction of the games initial premise, there could be trails that are always at night and feature
+harder objectives and maybe minor horror elements
