@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cuw0oa2eo3x8j"]
+[gd_scene load_steps=11 format=3 uid="uid://cuw0oa2eo3x8j"]
 
 [ext_resource type="PackedScene" uid="uid://dpc2xjylcdgse" path="res://entities/player/player.tscn" id="1_bei8j"]
+[ext_resource type="Script" path="res://systems/TrailTrashContainer.gd" id="2_8hoaa"]
 [ext_resource type="PackedScene" uid="uid://dmvrc8go2uth7" path="res://entities/objects/recycle_piece.tscn" id="2_pwn08"]
 [ext_resource type="PackedScene" uid="uid://dc6wcfus87nq6" path="res://entities/objects/trash_piece.tscn" id="3_flo3s"]
+[ext_resource type="Script" path="res://systems/TrailManager.gd" id="5_boewd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_riu7h"]
 
@@ -45,41 +47,45 @@ environment = SubResource("Environment_f12el")
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Trash Container" type="Node3D" parent="."]
+[node name="TrailTrashContainer" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0174894, 0, 0.00172901)
+script = ExtResource("2_8hoaa")
 
-[node name="Recycle" parent="Trash Container" instance=ExtResource("2_pwn08")]
+[node name="Recycle" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3, 0)
 
-[node name="Recycle2" parent="Trash Container" instance=ExtResource("2_pwn08")]
+[node name="Recycle2" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 4)
 
-[node name="Recycle3" parent="Trash Container" instance=ExtResource("2_pwn08")]
+[node name="Recycle3" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3, 0)
 
-[node name="Recycle4" parent="Trash Container" instance=ExtResource("2_pwn08")]
+[node name="Recycle4" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 3, 7)
 
-[node name="Recycle5" parent="Trash Container" instance=ExtResource("2_pwn08")]
+[node name="Recycle5" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 10)
 
-[node name="Recycle6" parent="Trash Container" instance=ExtResource("2_pwn08")]
+[node name="Recycle6" parent="TrailTrashContainer" instance=ExtResource("2_pwn08")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 3, 7)
 
-[node name="Trash" parent="Trash Container" instance=ExtResource("3_flo3s")]
+[node name="Trash" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -9)
 
-[node name="Trash2" parent="Trash Container" instance=ExtResource("3_flo3s")]
+[node name="Trash2" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -6)
 
-[node name="Trash3" parent="Trash Container" instance=ExtResource("3_flo3s")]
+[node name="Trash3" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -5)
 
-[node name="Trash4" parent="Trash Container" instance=ExtResource("3_flo3s")]
+[node name="Trash4" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -12)
 
-[node name="Trash5" parent="Trash Container" instance=ExtResource("3_flo3s")]
+[node name="Trash5" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 2, 5)
 
-[node name="Trash6" parent="Trash Container" instance=ExtResource("3_flo3s")]
+[node name="Trash6" parent="TrailTrashContainer" instance=ExtResource("3_flo3s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 10)
+
+[node name="TrailManager" type="Node" parent="."]
+script = ExtResource("5_boewd")
