@@ -22,6 +22,7 @@ shape = SubResource("CapsuleShape3D_2muic")
 [node name="Feet" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.05, 0, 0, 0, 1, 0, -1, 0)
 shape = SubResource("BoxShape3D_02v85")
+disabled = true
 
 [node name="Neck" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
