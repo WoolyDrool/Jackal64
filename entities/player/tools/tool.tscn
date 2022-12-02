@@ -21,3 +21,7 @@ debug_shape_custom_color = Color(0, 0.839216, 0.462745, 1)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.2, 0, 0, 0, 1.4, 0, 0, 0, 0.2, 0, 0, 0)
 mesh = SubResource("BoxMesh_61oxj")
+
+[connection signal="timeout" from="ToolPrimaryCooldown" to="." method="_on_tool_primary_cooldown_timeout"]
+[connection signal="timeout" from="ToolSecondaryCooldown" to="." method="_on_tool_secondary_cooldown_timeout"]
+[connection signal="timeout" from="ToolTertiaryCooldown" to="." method="_on_tool_tertiary_cooldown_timeout"]

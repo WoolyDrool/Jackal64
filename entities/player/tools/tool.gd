@@ -6,29 +6,37 @@ class_name UsableTool
 	
 var toolName = "Default"
 var isEquip : bool = false
-var canUSe : bool = true
+var canPrimary : bool = true
+var canSecondary : bool = true
+var canTertiary : bool = true
 
 var ray
 var primaryActionTimer
 var secondaryActionTimer
 var tertiaryActionTimer
 
-func _ready():
+@export var primaryActionCooldown : float
+@export var secondaryActionCooldown : float
+@export var tertiaryActionCooldown : float
+
+func _get_nodes():
 	ray = $"Raycaster"
 	primaryActionTimer = $"ToolPrimaryCooldown"
 	secondaryActionTimer = $"ToolSecondaryCooldown"
 	tertiaryActionTimer = $"ToolTertiaryCooldown"
+
+	primaryActionTimer.wait_time = primaryActionCooldown
 
 func _process(delta):
 	_process_input()
 	pass
 
 func _process_input():
-	if Input.is_action_just_pressed("tool_primary"):
+	if Input.is_action_just_pressed("tool_primary") && canPrimary:
 		_tool_primary()
-	if Input.is_action_just_pressed("tool_secondary"):
+	if Input.is_action_just_pressed("tool_secondary") && canSecondary:
 		_tool_secondary()
-	if Input.is_action_just_pressed("tool_tertiary"):
+	if Input.is_action_just_pressed("tool_tertiary") && canTertiary:
 		_tool_tertiary()
 	pass
 
@@ -41,3 +49,12 @@ func _tool_secondary() -> void:
 
 func _tool_tertiary() -> void:
 	pass
+
+func _on_tool_tertiary_cooldown_timeout():
+	pass # Replace with function body.
+
+func _on_tool_secondary_cooldown_timeout():
+	pass # Replace with function body.
+
+func _on_tool_primary_cooldown_timeout():
+	pass # Replace with function body.
