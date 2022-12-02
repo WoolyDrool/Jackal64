@@ -1,4 +1,24 @@
-[gd_scene format=3 uid="uid://vqbqnitv3pov"]
+[gd_scene load_steps=11 format=3 uid="uid://vqbqnitv3pov"]
+
+[ext_resource type="Texture2D" uid="uid://cyd8lm0a7c2y3" path="res://sprites/minigames/spr_mg_lock_locked.png" id="1_t628n"]
+[ext_resource type="Texture2D" uid="uid://68bm15dy6emc" path="res://sprites/minigames/spr_mg_lock_unlocked.png" id="2_cbjnc"]
+[ext_resource type="Script" path="res://ui/minigame_unlock_key.gd" id="3_u1pok"]
+[ext_resource type="Texture2D" uid="uid://byvk5d38a8v7o" path="res://sprites/minigames/spr_mg_lock_key.png" id="4_glnhs"]
+[ext_resource type="Texture2D" uid="uid://ddoejbd4bnit4" path="res://sprites/minigames/spr_mg_lock_bottom_bg.png" id="5_gjd0a"]
+[ext_resource type="Texture2D" uid="uid://c83x6vxmfoij7" path="res://sprites/minigames/spr_mg_lock_bottom_keyhole.png" id="6_p1y1n"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n8ji8"]
+height = 302.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_awqer"]
+radius = 27.9272
+height = 148.945
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rda7n"]
+size = Vector2(202.938, 188.044)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3lma"]
+size = Vector2(52.1309, 251.345)
 
 [node name="minigame_unlock_ui" type="Control"]
 layout_mode = 3
@@ -7,3 +27,54 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="SprMgLockLocked" type="Sprite2D" parent="."]
+position = Vector2(654, 340)
+texture = ExtResource("1_t628n")
+
+[node name="Area2D" type="Area2D" parent="SprMgLockLocked"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SprMgLockLocked/Area2D"]
+position = Vector2(8, 220)
+rotation = -1.6158
+shape = SubResource("CapsuleShape2D_n8ji8")
+
+[node name="SprMgLockUnlocked" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(640, 319)
+texture = ExtResource("2_cbjnc")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1108, 528)
+scale = Vector2(0.537109, 0.537109)
+script = ExtResource("3_u1pok")
+
+[node name="SprMgLockKey" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("4_glnhs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -215.971)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_awqer")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.930908, 146.153)
+shape = SubResource("RectangleShape2D_rda7n")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -67.9564)
+shape = SubResource("RectangleShape2D_x3lma")
+
+[node name="SprMgLockBottomBg" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(635, 340)
+texture = ExtResource("5_gjd0a")
+
+[node name="SprMgLockBottomKeyhole" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(635, 340)
+texture = ExtResource("6_p1y1n")
+
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_mouse_exited"]
