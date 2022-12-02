@@ -18,7 +18,7 @@ func add_item(item : GameItemObjective):
 	elif !item.recycling:
 		level_trash_count += 1
 	print_debug("Added item")
-	EventBus.G_UI_UPDATECOUNTS.emit()
+	EventBus.G_UI_UPDATE_COUNTS.emit()
 	pass
 
 
