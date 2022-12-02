@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cuw0oa2eo3x8j"]
+[gd_scene load_steps=13 format=3 uid="uid://cuw0oa2eo3x8j"]
 
 [ext_resource type="PackedScene" uid="uid://dpc2xjylcdgse" path="res://entities/player/player.tscn" id="1_bei8j"]
 [ext_resource type="Script" path="res://systems/TrailTrashContainer.gd" id="2_8hoaa"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dc6wcfus87nq6" path="res://entities/objects/trash_piece.tscn" id="3_flo3s"]
 [ext_resource type="PackedScene" uid="uid://duno81k1j5wuq" path="res://globals/trail_manager.tscn" id="5_17nia"]
 [ext_resource type="PackedScene" uid="uid://yhs843m8hbwk" path="res://globals/globals.tscn" id="6_8hm4n"]
+[ext_resource type="PackedScene" uid="uid://djvvh73ay3fb5" path="res://entities/objects/choppable_object.tscn" id="7_1xx2p"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_riu7h"]
 
@@ -44,7 +45,7 @@ mesh = SubResource("PlaneMesh_qqe6s")
 skeleton = NodePath("../..")
 
 [node name="Ground2" type="StaticBody3D" parent="."]
-transform = Transform3D(1.99552, -0.258308, 0, 0.534699, 0.964018, 0, 0, 0, 1.99605, 31, 4, 0)
+transform = Transform3D(1.99552, -0.258308, 0, 0.534699, 0.964018, 0, 0, 0, 1.99605, 30.9707, 4.02923, 0.000944138)
 collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground2"]
@@ -170,3 +171,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 10)
 collision_mask = 1
 
 [node name="Globals" parent="." instance=ExtResource("6_8hm4n")]
+
+[node name="ChoppableObject" parent="." instance=ExtResource("7_1xx2p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -9)
