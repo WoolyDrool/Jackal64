@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0bmlnhebbo42"]
+[gd_scene load_steps=5 format=3 uid="uid://d0bmlnhebbo42"]
+
+[ext_resource type="Script" path="res://entities/objects/deposit_point.gd" id="1_iey68"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_1hcep"]
 
@@ -8,6 +10,7 @@ albedo_color = Color(1, 0, 0.25098, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_ea48k"]
 
 [node name="DepositPoint" type="Area3D"]
+script = ExtResource("1_iey68")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
