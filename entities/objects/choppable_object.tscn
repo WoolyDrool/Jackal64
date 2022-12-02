@@ -11,7 +11,7 @@ albedo_color = Color(0.423529, 0.0901961, 1, 1)
 size = Vector3(2, 1, 1)
 
 [node name="ChoppableObject" type="Area3D"]
-collision_layer = 32
+collision_layer = 33
 script = ExtResource("1_mnx73")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
