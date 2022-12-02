@@ -11,7 +11,7 @@ func _process(delta):
 	pass
 
 func _update_objective_count(value):
-	print("received value " + str(value))
+	#print("received value " + str(value))
 	totalItemsInTrail += value
 	print("new total " + (str(totalItemsInTrail)))
 	

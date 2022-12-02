@@ -8,7 +8,7 @@ func _ready():
 	# It probably will fail to load occasionally cause of variances in load order but
 	# ¯\_(ツ)_/¯ 
 	itemsInTree = get_child_count()
-	print(itemsInTree)
+	#print(itemsInTree)
 	EventBus.G_T_UPDATE_OBJECTIVE_COUNT.emit(itemsInTree)
 
 
