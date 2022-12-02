@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpv0852576lxc"
-path="res://.godot/imported/spr_UI_locationIndicator.png-d8201edf421eb07e4ec6914ab4d8ac73.ctex"
+path="res://.godot/imported/spr_UI_locationIndicator.png-cc37428e2ed369141e71df8686d74363.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Overlays/spr_UI_locationIndicator.png"
-dest_files=["res://.godot/imported/spr_UI_locationIndicator.png-d8201edf421eb07e4ec6914ab4d8ac73.ctex"]
+source_file="res://media/Sprites/UI/Overlays/spr_UI_locationIndicator.png"
+dest_files=["res://.godot/imported/spr_UI_locationIndicator.png-cc37428e2ed369141e71df8686d74363.ctex"]
 
 [params]
 

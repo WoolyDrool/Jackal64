@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8y4n85823xdq"
-path="res://.godot/imported/spr_UI_player_dialsFill.png-248a24f8c66d83e43f675ed14ba745cd.ctex"
+path="res://.godot/imported/spr_UI_player_dialsFill.png-a9bfdf504fb10883b80240c3e3930ffa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Player/spr_UI_player_dialsFill.png"
-dest_files=["res://.godot/imported/spr_UI_player_dialsFill.png-248a24f8c66d83e43f675ed14ba745cd.ctex"]
+source_file="res://media/Sprites/UI/Player/spr_UI_player_dialsFill.png"
+dest_files=["res://.godot/imported/spr_UI_player_dialsFill.png-a9bfdf504fb10883b80240c3e3930ffa.ctex"]
 
 [params]
 

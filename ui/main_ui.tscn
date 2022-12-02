@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cfuum0m1fdiet"]
 
 [ext_resource type="Script" path="res://ui/main_ui.gd" id="1_43bkd"]
-[ext_resource type="FontFile" uid="uid://d1o6kv64g121o" path="res://media/fonts/coolvetica condensed rg.ttf" id="2_rrobn"]
+[ext_resource type="FontFile" uid="uid://d1o6kv64g121o" path="res://media/Fonts/coolvetica condensed rg.ttf" id="2_rrobn"]
 
 [node name="MainUI" type="Control"]
 layout_mode = 3
