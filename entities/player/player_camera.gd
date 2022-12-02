@@ -27,8 +27,6 @@ func _process(delta):
 				interactLabel.text = ("Grab " + str(x.itemName))
 				if Input.is_action_just_pressed("interact_general"):
 					x._on_grab()
-					PlayerInventory.add_item(x)
-					#x.queue_free()
 					x = null
 					canGet = false
 	else:
