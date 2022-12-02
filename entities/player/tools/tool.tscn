@@ -6,3 +6,10 @@
 script = ExtResource("1_5xmwn")
 
 [node name="Raycaster" type="RayCast3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="ToolPrimaryCooldown" type="Timer" parent="."]
+
+[node name="ToolSecondaryCooldown" type="Timer" parent="."]
+
+[node name="ToolTertiaryCooldown" type="Timer" parent="."]
