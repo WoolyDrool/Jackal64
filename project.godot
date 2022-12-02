@@ -108,3 +108,4 @@ interact_general={
 3d_physics/layer_1="Player"
 3d_physics/layer_2="Geometry"
 3d_physics/layer_5="Collectables"
+3d_physics/layer_6="Choppable"
