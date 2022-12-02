@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmvrc8go2uth7"]
+
+[ext_resource type="PackedScene" uid="uid://c5rs3gdf8h1ie" path="res://entities/objects/objective_piece.tscn" id="1_n1b7p"]
+
+[node name="Recycle" instance=ExtResource("1_n1b7p")]
+itemName = "Recycle"
+recycling = true
