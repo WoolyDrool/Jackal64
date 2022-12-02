@@ -16,6 +16,7 @@ size_flags_vertical = 4
 script = ExtResource("1_43bkd")
 
 [node name="TrashCount" type="Label" parent="."]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -30,7 +31,26 @@ grow_vertical = 2
 text = "Trash - 0"
 
 [node name="RecCount" type="Label" parent="."]
+layout_mode = 0
 offset_top = -50.0
 offset_right = 81.0
 offset_bottom = -24.0
 text = "Recycle - 0"
+
+[node name="CollectedCount" type="Label" parent="."]
+layout_mode = 1
+offset_left = -711.118
+offset_top = -725.842
+offset_right = -671.118
+offset_bottom = -699.842
+scale = Vector2(4.29735, 4.29735)
+text = "00"
+
+[node name="TotalCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = -711.118
+offset_top = -613.573
+offset_right = -671.118
+offset_bottom = -587.573
+scale = Vector2(4.29735, 4.29735)
+text = "00"
