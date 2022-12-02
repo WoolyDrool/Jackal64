@@ -36,6 +36,7 @@ config/icon="res://media/sprites/icon.svg"
 EventBus="*res://globals/event_bus.gd"
 PlayerInventory="*res://entities/player/player_inventory.gd"
 TrailManager="*res://systems/TrailManager.gd"
+Globals="*res://globals/Globals.gd"
 
 [display]
 
