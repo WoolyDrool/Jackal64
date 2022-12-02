@@ -1,3 +1,6 @@
+# Handles communication of all global events
+# See style guide to understand the prefixes and modifiers
+
 extends Node
 
 
@@ -5,8 +8,8 @@ extends Node
 #warning-ignore:unused_signal
 
 # Style Guide ------------------
-# prefixes: E (Entity) , P (Player) , G (Game)
-# modifiers: O (Objective), UI (User Interface), T (Trail)
+# prefixes: E (Entity) , P (Player) , G (Game), 
+# modifiers: O (Objective), UI (User Interface), T (Trail), RAY(Raycasts)
 
 # List of published signals
 
@@ -17,7 +20,11 @@ signal E_O_COLLECT_RECYCLE
 # GAME ----
 # ---- UI
 signal G_UI_UPDATE_COUNTS
-# ---- TRAILS
+
+# TRAILS ---- 
 signal G_T_BEGIN_TRAIL
 signal G_T_END_TRAIL
 signal G_T_UPDATE_OBJECTIVE_COUNT(newCount)
+
+# RAYS ----
+signal P_RAY_INTERACT_QUERY
