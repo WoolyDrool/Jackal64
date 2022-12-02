@@ -11,6 +11,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_02v85"]
 
 [node name="Player" type="CharacterBody3D"]
+collision_layer = 33
 collision_mask = 35
 script = ExtResource("1_61xkj")
 MAX_SPEED = 8
@@ -56,6 +57,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="InteractText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 auto_translate = false
@@ -63,17 +65,17 @@ text = "Interact Text"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Toolbelt" type="Node3D" parent="Neck"]
-
-[node name="Hatchet" parent="Neck/Toolbelt" instance=ExtResource("3_4ghhx")]
+[node name="Hatchet" parent="Neck/Camera3D" instance=ExtResource("3_4ghhx")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
-[node name="MeshInstance3D" parent="Neck/Toolbelt/Hatchet" index="4"]
-transform = Transform3D(0.2, 0, 0, 0, 1.4, 0, 0, 0, 0.2, -0.928355, -0.408911, -0.505601)
+[node name="MeshInstance3D" parent="Neck/Camera3D/Hatchet" index="4"]
+transform = Transform3D(0.2, 0, 0, 0, 1.4, 0, 0, 0, 0.2, -0.580646, -0.174325, -0.37091)
+
+[node name="Toolbelt" type="Node3D" parent="Neck"]
 
 [node name="MainUI" parent="." instance=ExtResource("2_xevq3")]
 
 [node name="Inventory" type="Node" parent="."]
 script = ExtResource("5_2148u")
 
-[editable path="Neck/Toolbelt/Hatchet"]
+[editable path="Neck/Camera3D/Hatchet"]
