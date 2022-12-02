@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfuum0m1fdiet"]
+[gd_scene load_steps=3 format=3 uid="uid://cfuum0m1fdiet"]
 
 [ext_resource type="Script" path="res://ui/main_ui.gd" id="1_43bkd"]
+[ext_resource type="FontFile" uid="uid://d1o6kv64g121o" path="res://media/fonts/coolvetica condensed rg.ttf" id="2_rrobn"]
 
 [node name="MainUI" type="Control"]
 layout_mode = 3
@@ -42,6 +43,8 @@ offset_top = -715.224
 offset_right = -665.052
 offset_bottom = -689.224
 scale = Vector2(4.29735, 4.29735)
+theme_override_fonts/normal_font = ExtResource("2_rrobn")
+theme_override_font_sizes/normal_font_size = 21
 text = "00"
 
 [node name="TotalCount" type="RichTextLabel" parent="."]
@@ -51,4 +54,6 @@ offset_top = -715.224
 offset_right = -565.084
 offset_bottom = -689.224
 scale = Vector2(4.29735, 4.29735)
+theme_override_fonts/normal_font = ExtResource("2_rrobn")
+theme_override_font_sizes/normal_font_size = 21
 text = "00"
