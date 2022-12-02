@@ -6,3 +6,6 @@
 script = ExtResource("1_pw6mc")
 
 [node name="Raycaster" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 5.96046e-08, -1, 0, 1, 5.96046e-08, 0, 0, 0)
+enabled = false
+debug_shape_custom_color = Color(0.654902, 0, 0.117647, 1)
