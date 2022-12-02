@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dpc2xjylcdgse"]
+[gd_scene load_steps=7 format=3 uid="uid://dpc2xjylcdgse"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_61xkj"]
 [ext_resource type="Script" path="res://entities/player/player_camera.gd" id="2_ecwpp"]
 [ext_resource type="PackedScene" uid="uid://cfuum0m1fdiet" path="res://ui/main_ui.tscn" id="2_xevq3"]
-[ext_resource type="PackedScene" uid="uid://ctcf4y73mc6fd" path="res://entities/player/tools/tool_hatchet.tscn" id="3_4ghhx"]
 [ext_resource type="Script" path="res://entities/player/player_inventory.gd" id="5_2148u"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2muic"]
@@ -39,6 +38,7 @@ target_position = Vector3(0, -2.5, 0)
 collision_mask = 16
 hit_from_inside = true
 collide_with_areas = true
+debug_shape_custom_color = Color(0.27451, 0.909804, 0, 1)
 
 [node name="ImmediateUI" type="Control" parent="Neck/Camera3D"]
 layout_mode = 3
@@ -64,8 +64,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Toolbelt" type="Node3D" parent="Neck"]
-
-[node name="Hatchet" parent="Neck/Toolbelt" instance=ExtResource("3_4ghhx")]
 
 [node name="MainUI" parent="." instance=ExtResource("2_xevq3")]
 
