@@ -106,4 +106,5 @@ interact_general={
 [layer_names]
 
 3d_physics/layer_1="Player"
+3d_physics/layer_2="Geometry"
 3d_physics/layer_5="Collectables"
