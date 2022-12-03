@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj6k1rl60fhhy"
-path="res://.godot/imported/spr_UI_key_SwitchSNES_A.png-61a3a65788b1a8ea2543bdee6951db1b.ctex"
+path="res://.godot/imported/spr_UI_key_SwitchSNES_A.png-6d100336239cbb2aa05df87be4e3156d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Keys/Switch-SNES/spr_UI_key_SwitchSNES_A.png"
-dest_files=["res://.godot/imported/spr_UI_key_SwitchSNES_A.png-61a3a65788b1a8ea2543bdee6951db1b.ctex"]
+source_file="res://media/Sprites/UI/Keys/Switch-SNES/spr_UI_key_SwitchSNES_A.png"
+dest_files=["res://.godot/imported/spr_UI_key_SwitchSNES_A.png-6d100336239cbb2aa05df87be4e3156d.ctex"]
 
 [params]
 

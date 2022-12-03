@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfn30buhqjn"
-path="res://.godot/imported/spr_ui_item_shellbox.png-8943f8fdee3df9d4be8114598c631177.ctex"
+path="res://.godot/imported/spr_ui_item_shellbox.png-df82ff2b2e651491dae7fbd9763d0e5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Items/spr_ui_item_shellbox.png"
-dest_files=["res://.godot/imported/spr_ui_item_shellbox.png-8943f8fdee3df9d4be8114598c631177.ctex"]
+source_file="res://media/Sprites/UI/Items/spr_ui_item_shellbox.png"
+dest_files=["res://.godot/imported/spr_ui_item_shellbox.png-df82ff2b2e651491dae7fbd9763d0e5d.ctex"]
 
 [params]
 

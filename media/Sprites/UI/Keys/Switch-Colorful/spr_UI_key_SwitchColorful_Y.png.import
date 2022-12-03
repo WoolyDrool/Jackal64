@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cilmta3njopdl"
-path="res://.godot/imported/spr_UI_key_SwitchColorful_Y.png-cfc14e5d07cbd7f7777720c043d62a3f.ctex"
+path="res://.godot/imported/spr_UI_key_SwitchColorful_Y.png-381aae55dac7e15d9f3294b692ba1d42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Keys/Switch-Colorful/spr_UI_key_SwitchColorful_Y.png"
-dest_files=["res://.godot/imported/spr_UI_key_SwitchColorful_Y.png-cfc14e5d07cbd7f7777720c043d62a3f.ctex"]
+source_file="res://media/Sprites/UI/Keys/Switch-Colorful/spr_UI_key_SwitchColorful_Y.png"
+dest_files=["res://.godot/imported/spr_UI_key_SwitchColorful_Y.png-381aae55dac7e15d9f3294b692ba1d42.ctex"]
 
 [params]
 

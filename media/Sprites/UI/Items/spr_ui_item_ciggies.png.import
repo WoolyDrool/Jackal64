@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cg4uwou0awdw4"
-path="res://.godot/imported/spr_ui_item_ciggies.png-b39438cca645e26a8b8b3ac93b7f7a6f.ctex"
+path="res://.godot/imported/spr_ui_item_ciggies.png-3cc67ec0eb819175592ec3330c9a74aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Items/spr_ui_item_ciggies.png"
-dest_files=["res://.godot/imported/spr_ui_item_ciggies.png-b39438cca645e26a8b8b3ac93b7f7a6f.ctex"]
+source_file="res://media/Sprites/UI/Items/spr_ui_item_ciggies.png"
+dest_files=["res://.godot/imported/spr_ui_item_ciggies.png-3cc67ec0eb819175592ec3330c9a74aa.ctex"]
 
 [params]
 

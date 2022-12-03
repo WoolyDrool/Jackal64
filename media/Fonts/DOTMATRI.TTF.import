@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://biaculsj7ghnr"
-path="res://.godot/imported/DOTMATRI.TTF-c9399c033a76ed71b7aa9ca2c0705074.fontdata"
+path="res://.godot/imported/DOTMATRI.TTF-67b92552abefbfa3e7fb1df416e551c4.fontdata"
 
 [deps]
 
-source_file="res://media/fonts/DOTMATRI.TTF"
-dest_files=["res://.godot/imported/DOTMATRI.TTF-c9399c033a76ed71b7aa9ca2c0705074.fontdata"]
+source_file="res://media/Fonts/DOTMATRI.TTF"
+dest_files=["res://.godot/imported/DOTMATRI.TTF-67b92552abefbfa3e7fb1df416e551c4.fontdata"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1gbmmmfkjru4"
-path="res://.godot/imported/spr_ui_tool_hatchet.png-79ef7ca7396a06a5c32c0cc1e3fa0372.ctex"
+path="res://.godot/imported/spr_ui_tool_hatchet.png-de0fa568be505cf19a939a3806e4ccc7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Items/spr_ui_tool_hatchet.png"
-dest_files=["res://.godot/imported/spr_ui_tool_hatchet.png-79ef7ca7396a06a5c32c0cc1e3fa0372.ctex"]
+source_file="res://media/Sprites/UI/Items/spr_ui_tool_hatchet.png"
+dest_files=["res://.godot/imported/spr_ui_tool_hatchet.png-de0fa568be505cf19a939a3806e4ccc7.ctex"]
 
 [params]
 

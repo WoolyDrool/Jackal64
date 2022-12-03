@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp3ekq5ijqo2"
-path="res://.godot/imported/spr_UI_toolbarDial_circle.png-37c645939d88c4ba020404d41b9c53da.ctex"
+path="res://.godot/imported/spr_UI_toolbarDial_circle.png-5052e358fa5388ef619652fc6f9ee814.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Overlays/spr_UI_toolbarDial_circle.png"
-dest_files=["res://.godot/imported/spr_UI_toolbarDial_circle.png-37c645939d88c4ba020404d41b9c53da.ctex"]
+source_file="res://media/Sprites/UI/Overlays/spr_UI_toolbarDial_circle.png"
+dest_files=["res://.godot/imported/spr_UI_toolbarDial_circle.png-5052e358fa5388ef619652fc6f9ee814.ctex"]
 
 [params]
 

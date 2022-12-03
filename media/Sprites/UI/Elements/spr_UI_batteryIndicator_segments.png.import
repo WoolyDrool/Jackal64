@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c633celc1g6gt"
-path="res://.godot/imported/spr_UI_batteryIndicator_segments.png-8275f50ebcfbfd85b53a86e2a8cc264c.ctex"
+path="res://.godot/imported/spr_UI_batteryIndicator_segments.png-167f339a1374758d9353c41db4af49b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Elements/spr_UI_batteryIndicator_segments.png"
-dest_files=["res://.godot/imported/spr_UI_batteryIndicator_segments.png-8275f50ebcfbfd85b53a86e2a8cc264c.ctex"]
+source_file="res://media/Sprites/UI/Elements/spr_UI_batteryIndicator_segments.png"
+dest_files=["res://.godot/imported/spr_UI_batteryIndicator_segments.png-167f339a1374758d9353c41db4af49b7.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6eg1kosogu3l"
-path="res://.godot/imported/spr_UI_key_Xbox_A.png-faa273ae6d2d18fb7495cb440f5a162f.ctex"
+path="res://.godot/imported/spr_UI_key_Xbox_A.png-d72b3fd0d8e014e5a0f5a52d7ec10845.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Keys/Xbox/spr_UI_key_Xbox_A.png"
-dest_files=["res://.godot/imported/spr_UI_key_Xbox_A.png-faa273ae6d2d18fb7495cb440f5a162f.ctex"]
+source_file="res://media/Sprites/UI/Keys/Xbox/spr_UI_key_Xbox_A.png"
+dest_files=["res://.godot/imported/spr_UI_key_Xbox_A.png-d72b3fd0d8e014e5a0f5a52d7ec10845.ctex"]
 
 [params]
 

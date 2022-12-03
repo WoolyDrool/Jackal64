@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mwehp17u3auw"
-path="res://.godot/imported/spr_ui_item_fallenBranchPile.png-f7ce7a5cc97cefeebde7a1e951a0ddba.ctex"
+path="res://.godot/imported/spr_ui_item_fallenBranchPile.png-256ffefd521fe54b5f79fbb8ed6b13c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Items/spr_ui_item_fallenBranchPile.png"
-dest_files=["res://.godot/imported/spr_ui_item_fallenBranchPile.png-f7ce7a5cc97cefeebde7a1e951a0ddba.ctex"]
+source_file="res://media/Sprites/UI/Items/spr_ui_item_fallenBranchPile.png"
+dest_files=["res://.godot/imported/spr_ui_item_fallenBranchPile.png-256ffefd521fe54b5f79fbb8ed6b13c7.ctex"]
 
 [params]
 
