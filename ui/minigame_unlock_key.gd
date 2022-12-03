@@ -2,7 +2,7 @@ extends Area2D
 
 var canClick : bool = false
 var isHeld : bool = false
-var mousePos
+var mouseOffset
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,18 +12,22 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if isHeld:
-		position = mousePos
+		position = get_global_mouse_position() + mouseOffset
 	pass
 
 func _on_mouse_entered():
 	canClick = true
 	pass # Replace with function body.
 
+func _on_grabbable_input_event(viewport:Node, event:InputEvent, shape_idx:int):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			mouseOffset = position - get_global_mouse_position()
+			isHeld = true
+		else:
+			isHeld = false
 
-
-func _on_input_event(viewport:Node, event:InputEvent, shape_idx:int):
-	if canClick && event.is_action_pressed("tool_primary"):
-		position = Input.mouse
-	
-	mousePos = Vector2(event.relative.x, event.relative.y)
-	
+func _on_body_entered(body:Node2D):
+	if body is $"Lock":
+		print("height")
+	pass # Replace with function body.
