@@ -1,5 +1,7 @@
 extends Node3D
 
+# This node will be attached to other nodes and will handle all the interaction handling
+
 @export var interactText : String = "Default Message"
 @export var methodName : String
 var parent
