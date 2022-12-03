@@ -18,7 +18,9 @@ func _process(delta):
 func ChangeState(state):
 	if state.StateName != currentState.StateName:
 		previousState = currentState
+		previousState.Exit()
 		currentState = state
+		currentState.Enter()
 		previousState = null
 
 func QueueState(state):
