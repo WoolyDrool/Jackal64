@@ -14,21 +14,25 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if raycaster.is_colliding():
+	if raycaster.get_collider():
 		x = raycaster.get_collider()
+		
+		if x.name == "Interact":
+			canGet = true
 
-		if x:
-			if x.has_method("_on_grab"):
-				canGet = true
-			else:
-				canGet = false
+		#if x:
+		#	if x.get_children().has_node("Interact"):
+		#		
+		#		canGet = true
+		#	else:
+		#		canGet = false
 			
-			if canGet:
-				interactLabel.text = ("Grab " + str(x.itemName))
-				if Input.is_action_just_pressed("interact_general"):
-					x._on_grab()
-					x = null
-					canGet = false
+		if canGet:
+			interactLabel.text = (x.interactText)
+			if Input.is_action_just_pressed("interact_general"):
+				x._on_grab()
+				x = null
+				canGet = false
 	else:
 		interactLabel.text = ""
 		pass
