@@ -225,3 +225,6 @@ collision_mask = 1
 
 [node name="ChoppableObject" parent="." instance=ExtResource("7_1xx2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -9)
+
+[node name="LockedObject" parent="." instance=ExtResource("8_fkebh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2, 0, -9.1)
