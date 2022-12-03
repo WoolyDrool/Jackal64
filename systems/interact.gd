@@ -17,4 +17,7 @@ func _process(delta):
 	pass
 
 func Interact():
-	parent.call(methodName)
+	if methodName:
+		parent.call(methodName)
+	else:
+		print_debug("No method to call!")
