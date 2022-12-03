@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dpc2xjylcdgse"]
+[gd_scene load_steps=9 format=3 uid="uid://dpc2xjylcdgse"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_61xkj"]
 [ext_resource type="Script" path="res://entities/player/player_camera.gd" id="2_ecwpp"]
 [ext_resource type="PackedScene" uid="uid://cfuum0m1fdiet" path="res://ui/main_ui.tscn" id="2_xevq3"]
 [ext_resource type="PackedScene" uid="uid://bdxfhwdlyw4vh" path="res://entities/player/tools/tool_hatchet.tscn" id="3_4ghhx"]
 [ext_resource type="Script" path="res://entities/player/player_inventory.gd" id="5_2148u"]
+[ext_resource type="PackedScene" uid="uid://vqbqnitv3pov" path="res://ui/minigame_unlock_ui.tscn" id="6_6i3hx"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2muic"]
 
@@ -76,5 +77,8 @@ transform = Transform3D(0.2, 0, 0, 0, 1.4, 0, 0, 0, 0.2, -0.580646, -0.174325, -
 
 [node name="Inventory" type="Node" parent="."]
 script = ExtResource("5_2148u")
+
+[node name="minigame_unlock_ui" parent="." instance=ExtResource("6_6i3hx")]
+visible = false
 
 [editable path="Neck/Camera3D/Hatchet"]

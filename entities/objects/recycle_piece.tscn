@@ -11,3 +11,6 @@ recycling = true
 
 [node name="MeshInstance3D" parent="." index="1"]
 surface_material_override/0 = SubResource("StandardMaterial3D_l73mb")
+
+[node name="Interact" parent="." index="2"]
+interactText = "Grab recycle"

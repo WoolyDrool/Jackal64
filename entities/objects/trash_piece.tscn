@@ -9,3 +9,6 @@ albedo_color = Color(0.870588, 0.858824, 0.184314, 1)
 
 [node name="MeshInstance3D" parent="." index="1"]
 surface_material_override/0 = SubResource("StandardMaterial3D_6riuh")
+
+[node name="Interact" parent="." index="2"]
+interactText = "Grab trash"
