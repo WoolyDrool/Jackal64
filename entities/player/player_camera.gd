@@ -32,7 +32,7 @@ func _process(delta):
 		if canGet:
 			interactLabel.text = (x.interactText)
 			if Input.is_action_just_pressed("interact_general"):
-				x._on_grab()
+				x.Interact()
 				x = null
 				canGet = false
 	else:
