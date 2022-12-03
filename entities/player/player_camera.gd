@@ -19,6 +19,8 @@ func _process(delta):
 		
 		if x.name == "Interact":
 			canGet = true
+		else:
+			canGet = false
 
 		#if x:
 		#	if x.get_children().has_node("Interact"):
@@ -35,6 +37,7 @@ func _process(delta):
 				canGet = false
 	else:
 		interactLabel.text = ""
+		canGet = false
 		pass
 
 
