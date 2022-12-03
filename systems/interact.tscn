@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://pletdq3bfgxj"]
+[gd_scene load_steps=3 format=3 uid="uid://pletdq3bfgxj"]
 
 [ext_resource type="Script" path="res://systems/interact.gd" id="1_33awc"]
 
-[node name="Interact" type="Node3D"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_2ctav"]
+
+[node name="Interact" type="Area3D"]
 script = ExtResource("1_33awc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_2ctav")

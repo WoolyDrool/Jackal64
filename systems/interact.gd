@@ -1,4 +1,4 @@
-extends Node3D
+extends Area3D
 
 # This node will be attached to other nodes and will handle all the interaction handling
 
