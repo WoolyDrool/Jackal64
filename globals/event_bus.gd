@@ -20,6 +20,9 @@ signal E_O_COLLECT_RECYCLE
 # GAME ----
 # ---- UI
 signal G_UI_UPDATE_COUNTS
+# ---- MINIGAMES
+signal G_UI_MG_LOCK_START
+signal G_UI_MG_LOCK_END
 
 # TRAILS ---- 
 signal G_T_BEGIN_TRAIL
