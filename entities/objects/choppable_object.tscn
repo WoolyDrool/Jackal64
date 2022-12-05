@@ -5,8 +5,8 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_i65n8"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lx61i"]
-albedo_color = Color(0.423529, 0.0901961, 1, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_832de"]
+albedo_color = Color(0, 1, 0, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4l1nf"]
 size = Vector3(2, 1, 1)
@@ -15,10 +15,10 @@ size = Vector3(2, 1, 1)
 collision_layer = 33
 script = ExtResource("1_mnx73")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Capsule" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("CapsuleMesh_i65n8")
-surface_material_override/0 = SubResource("StandardMaterial3D_lx61i")
+surface_material_override/0 = SubResource("StandardMaterial3D_832de")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_4l1nf")
