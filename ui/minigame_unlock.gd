@@ -15,12 +15,20 @@ func _ready():
 	container1.visible = true
 	container2.visible = false
 	lock.connect("E_O_UNLOCKED", _enter_phase2)
+	EventBus.G_UI_MG_LOCK_START.connect(_start)
+	EventBus.G_UI_MG_LOCK_END.connect(_end)
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func _start():
+	visible = true
+
+func _end():
+	visible = false
 
 func _enter_phase2():
 	container1.visible = false
