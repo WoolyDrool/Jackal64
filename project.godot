@@ -9,6 +9,16 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "Node",
+"class": &"AbstractState",
+"language": &"GDScript",
+"path": "res://systems/abstract_state.gd"
+}, {
+"base": "Node",
+"class": &"AbstractStateMachine",
+"language": &"GDScript",
+"path": "res://systems/abstract_state_machine.gd"
+}, {
 "base": "Area3D",
 "class": &"GameItemObjective",
 "language": &"GDScript",
@@ -20,6 +30,8 @@ _global_script_classes=[{
 "path": "res://entities/player/tools/tool.gd"
 }]
 _global_script_class_icons={
+"AbstractState": "",
+"AbstractStateMachine": "",
 "GameItemObjective": "",
 "UsableTool": ""
 }
