@@ -3,6 +3,8 @@ extends Area3D
 # This node will be attached to other nodes and will handle all the interaction handling
 
 @export var interactText : String = "Default Message"
+@export var modifierText : String = "Default Modifier"
+@export var appendText : String = "Default Append"
 @export var methodName : String
 var parent
 
