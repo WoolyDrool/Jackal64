@@ -39,8 +39,8 @@ func _process(delta):
 			
 		if canGet:
 			interactLabel.text = (x.interactText)
-			modifierLabel.text = "[" + x.modifierText + "]"
-			appendLabel.text = "(" + x.appendText + ")"
+			if x.modifierText : modifierLabel.text = "[" + x.modifierText + "]"
+			if x.appendText : appendLabel.text = "(" + x.appendText + ")"
 			if Input.is_action_just_pressed("interact_general"):
 				x.Interact()
 				x = null
