@@ -35,7 +35,7 @@ sky = SubResource("Sky_3y8ud")
 [node name="Debug Level" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_bei8j")]
-transform = Transform3D(-3.42435e-07, 0, 8, 0, 0.979, 0, -7.834, 0, -3.49691e-07, 0, 3, 0)
+transform = Transform3D(7.834, 0, -1.13687e-13, 0, 0.979, 0, 5.68434e-14, 0, 8, 7, 2, 0)
 MAX_SLOPE_ANGLE = 60
 
 [node name="Ground" type="StaticBody3D" parent="."]
