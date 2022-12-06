@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://dpc2xjylcdgse"]
+[gd_scene load_steps=10 format=3 uid="uid://dpc2xjylcdgse"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_61xkj"]
 [ext_resource type="Script" path="res://entities/player/player_camera.gd" id="2_ecwpp"]
 [ext_resource type="PackedScene" uid="uid://cfuum0m1fdiet" path="res://ui/main_ui.tscn" id="2_xevq3"]
 [ext_resource type="PackedScene" uid="uid://bdxfhwdlyw4vh" path="res://entities/player/tools/tool_hatchet.tscn" id="3_4ghhx"]
+[ext_resource type="FontFile" uid="uid://d1o6kv64g121o" path="res://media/Fonts/coolvetica condensed rg.ttf" id="3_vr1kv"]
+[ext_resource type="PackedScene" uid="uid://myhwiai8lqgc" path="res://ui/minigames/lock/minigame_unlock_ui.tscn" id="5_6tkap"]
 [ext_resource type="Script" path="res://entities/player/player_inventory.gd" id="5_2148u"]
-[ext_resource type="PackedScene" uid="uid://vqbqnitv3pov" path="res://ui/minigame_unlock_ui.tscn" id="6_6i3hx"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2muic"]
 
@@ -58,10 +59,41 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="InteractText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -45.0
+offset_top = -7.0
+offset_right = 74.0
+offset_bottom = 33.0
+pivot_offset = Vector2(60, 21)
 auto_translate = false
+theme_override_fonts/font = ExtResource("3_vr1kv")
+theme_override_font_sizes/font_size = 30
 text = "Interact Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModifierText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+offset_left = -45.0
+offset_top = -31.0
+offset_right = 74.0
+offset_bottom = 9.0
+pivot_offset = Vector2(60, 21)
+auto_translate = false
+theme_override_fonts/font = ExtResource("3_vr1kv")
+theme_override_font_sizes/font_size = 25
+text = "[Modifier]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AppendText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+offset_left = -45.0
+offset_top = 19.0
+offset_right = 74.0
+offset_bottom = 59.0
+pivot_offset = Vector2(60, 21)
+auto_translate = false
+theme_override_fonts/font = ExtResource("3_vr1kv")
+theme_override_font_sizes/font_size = 25
+text = "[Append]"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -73,12 +105,14 @@ transform = Transform3D(0.2, 0, 0, 0, 1.4, 0, 0, 0, 0.2, -0.580646, -0.174325, -
 
 [node name="Toolbelt" type="Node3D" parent="Neck"]
 
+[node name="Node3D" type="Node3D" parent="Neck"]
+
 [node name="MainUI" parent="." instance=ExtResource("2_xevq3")]
+
+[node name="minigame_unlock_ui" parent="." instance=ExtResource("5_6tkap")]
+visible = false
 
 [node name="Inventory" type="Node" parent="."]
 script = ExtResource("5_2148u")
-
-[node name="minigame_unlock_ui" parent="." instance=ExtResource("6_6i3hx")]
-visible = false
 
 [editable path="Neck/Camera3D/Hatchet"]

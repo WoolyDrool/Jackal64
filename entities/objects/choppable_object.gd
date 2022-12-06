@@ -14,6 +14,17 @@ func _process(delta):
 func _on_chop():
 	health -= 1
 	print("chopped")
+
+	# Debug only, just so health can be visualised
+	var m = $"Capsule"
+	var mat = m.get_surface_override_material(0)
+	if health == 2:
+		mat.set_albedo(Color(0, 0, 1, 1))
+	elif health == 1:
+		mat.set_albedo(Color(1, 0, 0, 1))
+	
+	m.set_surface_override_material(0, mat)
+
 	if health == 0:
 		_chop_log()
 

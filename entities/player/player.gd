@@ -11,10 +11,9 @@ extends CharacterBody3D
 @export var MOUSE_SENSITIVITY = 0.05
 
 # Internal variables
-const GRAVITY = -24.8
+var GRAVITY = -ProjectSettings.get_setting("physics/3d/default_gravity")
 var vel = Vector3()
 var dir = Vector3()
-
 
 # Refs
 var camera
