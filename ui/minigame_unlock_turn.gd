@@ -35,7 +35,7 @@ func _process(delta):
 			# 3 When the player clicks on the lock, it stores the mouse position at the frame of the click in the variable clickPoint
 			#	Additionally, it stores the additional click and drag movement of the mouse in the variable upX/Y
 			# 4 Then, the child rotationHelper node has its position set to the clickPoint
-			# 5 MATH
+			# 5 MATH (idk im stupid)
 			# 6 Then keyholeSprite has its rotation augmented, and finally the cursor is warped to the clickPoint
 
 			#var adj = Vector2(clickPoint.x, clickPoint.y)
@@ -73,17 +73,19 @@ func _process(delta):
 
 
 func _on_input_event(viewport:Node, event:InputEvent, shape_idx:int):
-	# 3
+
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if canHold:
 			if event.pressed:
 				isHeld = true
+				# 3
 				clickPoint = get_global_mouse_position()
 				print(clickPoint)
 			else:
 				isHeld = false
 	pass # Replace with function body.
-
+	
+	# 3
 	if event is InputEventMouseMotion:
 		upY = event.relative.y
 		upX = event.relative.x
