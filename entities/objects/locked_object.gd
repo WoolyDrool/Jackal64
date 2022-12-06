@@ -14,7 +14,7 @@ func _ready():
 func _process(delta):
 	pass
 
-func _unlocked():
+func _started():
 	EventBus.G_UI_MG_LOCK_START.emit()
 
 func _finished():
