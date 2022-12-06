@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://vqbqnitv3pov"]
+[gd_scene load_steps=13 format=3 uid="uid://vqbqnitv3pov"]
 
 [ext_resource type="Script" path="res://ui/minigame_unlock_lock.gd" id="1_bc21g"]
 [ext_resource type="Script" path="res://ui/minigame_unlock.gd" id="1_g5emb"]
@@ -21,12 +21,6 @@ height = 148.945
 [sub_resource type="CircleShape2D" id="CircleShape2D_rlny3"]
 radius = 4.55828
 
-[sub_resource type="Curve2D" id="Curve2D_cw1e8"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -92, 30, 0, 0, 0, 0, -82, -23, 0, 0, 0, 0, -36, -52, 0, 0, 0, 0, -13, -53, 0, 0, 0, 0, 36, -38, 0, 0, 0, 0, 52, 1, 0, 0, 0, 0, 57, 30, 0, 0, 0, 0, -92, 30)
-}
-point_count = 8
-
 [node name="minigame_unlock_ui" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -38,10 +32,11 @@ mouse_filter = 2
 script = ExtResource("1_g5emb")
 
 [node name="Phase1" type="Node2D" parent="."]
-visible = false
 
 [node name="Lock" type="Area2D" parent="Phase1"]
-position = Vector2(654, 340)
+position = Vector2(160, 180)
+rotation = -0.210339
+scale = Vector2(0.72, 0.72)
 disable_mode = 2
 collision_layer = 0
 collision_mask = 2147483648
@@ -59,7 +54,8 @@ rotation = -1.6158
 shape = SubResource("CapsuleShape2D_n8ji8")
 
 [node name="Key" type="Area2D" parent="Phase1"]
-position = Vector2(1108, 528)
+position = Vector2(1140, 567)
+rotation = -0.633404
 scale = Vector2(0.537109, 0.537109)
 collision_layer = 2147483648
 collision_mask = 0
@@ -80,6 +76,7 @@ shape = SubResource("CapsuleShape2D_awqer")
 polygon = PackedVector2Array(-5.58569, -180.596, -33.5128, -63.3019, -35.3746, 83.7819, -87.5056, 113.571, -104.262, 175.011, -76.3347, 229.004, -13.033, 242.036, 33.5127, 236.451, 83.7817, 210.386, 100.538, 180.596, 96.8145, 126.604, 59.5781, 89.3673, 29.7891, 68.8873, 29.7891, -29.7891, 29.7891, -154.531)
 
 [node name="Phase2" type="Node2D" parent="."]
+visible = false
 
 [node name="SprMgLockUnlocked" type="Sprite2D" parent="Phase2"]
 visible = false
@@ -94,29 +91,19 @@ texture = ExtResource("5_gjd0a")
 position = Vector2(635, 340)
 script = ExtResource("8_eyr2i")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Phase2/Keyhole"]
-position = Vector2(-88, 22)
-scale = Vector2(6.78749, 6.28)
-shape = SubResource("CircleShape2D_rlny3")
-
 [node name="RotationHelper" type="Node2D" parent="Phase2/Keyhole"]
 position = Vector2(-14.9999, 19)
-scale = Vector2(1, 1)
+scale = Vector2(1.12499, 0.496042)
 
 [node name="SprMgLockBottomKeyhole" type="Sprite2D" parent="Phase2/Keyhole"]
 position = Vector2(-14.9999, 19)
-scale = Vector2(1, 1)
 texture = ExtResource("6_p1y1n")
 offset = Vector2(15, -19)
 
-[node name="Path2D" type="Path2D" parent="Phase2/Keyhole"]
-curve = SubResource("Curve2D_cw1e8")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Phase2/Keyhole/Path2D"]
-position = Vector2(50.679, 30)
-rotation = 3.14159
-scale = Vector2(6.78749, 6.28)
-progress = 260.483
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Phase2/Keyhole"]
+position = Vector2(-16, 15)
+scale = Vector2(13.592, 12.36)
+shape = SubResource("CircleShape2D_rlny3")
 
 [connection signal="area_shape_entered" from="Phase1/Lock" to="Phase1/Lock" method="_on_area_shape_entered"]
 [connection signal="body_entered" from="Phase1/Lock" to="Phase1/Lock" method="_on_key_body_entered"]
