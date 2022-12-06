@@ -25,9 +25,11 @@ func _process(delta):
 	pass
 
 func _start():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	visible = true
 
 func _end():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	visible = false
 
 func _enter_phase2():
