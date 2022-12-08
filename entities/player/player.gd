@@ -19,6 +19,11 @@ var dir = Vector3()
 var camera
 var rotation_helper
 
+# TODO ----
+# 1 Make angles/sliding feel better. Its very snappy and locky and Skyrim-y, for lack of a better word
+# 2 Implement a state machine of some kind
+# 3 Procedural headbob/crouch animations
+
 func _ready():
 	camera = $Neck/Camera3D
 	rotation_helper = $Neck
