@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ckc18ya6kl57j"]
+[gd_scene load_steps=14 format=3 uid="uid://ckc18ya6kl57j"]
 
 [ext_resource type="PackedScene" uid="uid://dpc2xjylcdgse" path="res://entities/player/player.tscn" id="1_bei8j"]
 [ext_resource type="Script" path="res://systems/TrailTrashContainer.gd" id="2_8hoaa"]
@@ -6,7 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://yhs843m8hbwk" path="res://globals/globals.tscn" id="6_8hm4n"]
 [ext_resource type="PackedScene" uid="uid://djvvh73ay3fb5" path="res://entities/objects/choppable_object.tscn" id="7_1xx2p"]
 [ext_resource type="PackedScene" uid="uid://jvmi8xmmmoka" path="res://entities/objects/locked_object.tscn" id="8_fkebh"]
+[ext_resource type="PackedScene" uid="uid://cy8kx5h12w1ho" path="res://entities/interactables/deposit_point.tscn" id="8_qmxnh"]
 [ext_resource type="PackedScene" uid="uid://d2gne62upaj62" path="res://entities/environment/debug_ground.tscn" id="9_2ysk1"]
+[ext_resource type="PackedScene" uid="uid://cu7wm3tq8eng5" path="res://entities/interactables/garb_deposit_point.tscn" id="9_re2nq"]
+[ext_resource type="PackedScene" uid="uid://8fhpirxxh437" path="res://entities/interactables/rec_deposit_point.tscn" id="10_7l1sy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_d60at"]
 sky_top_color = Color(0.164706, 0.462745, 0.721569, 1)
@@ -59,3 +62,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 1, -9)
 
 [node name="LockedObject" parent="Entities" instance=ExtResource("8_fkebh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2, 0, -9.1)
+
+[node name="DepositPoint" parent="." instance=ExtResource("8_qmxnh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9)
+
+[node name="GarbDepositPoint" parent="." instance=ExtResource("9_re2nq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -9)
+
+[node name="RecDepositPoint" parent="." instance=ExtResource("10_7l1sy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -9)
