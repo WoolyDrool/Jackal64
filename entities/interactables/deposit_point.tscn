@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=6 format=3 uid="uid://cy8kx5h12w1ho"]
 
 [ext_resource type="Script" path="res://entities/interactables/deposit_point.gd" id="1_hrks7"]
 [ext_resource type="PackedScene" uid="uid://pletdq3bfgxj" path="res://systems/interact.tscn" id="2_b51af"]
