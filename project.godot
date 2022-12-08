@@ -22,7 +22,7 @@ _global_script_classes=[{
 "base": "Area3D",
 "class": &"GameItemObjective",
 "language": &"GDScript",
-"path": "res://entities/objects/objective_piece.gd"
+"path": "res://entities/items/objective_piece.gd"
 }, {
 "base": "Node3D",
 "class": &"UsableTool",
