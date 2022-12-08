@@ -32,12 +32,13 @@ func _process(delta):
 	pass
 
 func _process_input():
-	if Input.is_action_just_pressed("tool_primary") && canPrimary:
-		_tool_primary()
-	if Input.is_action_just_pressed("tool_secondary") && canSecondary:
-		_tool_secondary()
-	if Input.is_action_just_pressed("tool_tertiary") && canTertiary:
-		_tool_tertiary()
+	if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		if Input.is_action_just_pressed("tool_primary") && canPrimary:
+			_tool_primary()
+		if Input.is_action_just_pressed("tool_secondary") && canSecondary:
+			_tool_secondary()
+		if Input.is_action_just_pressed("tool_tertiary") && canTertiary:
+			_tool_tertiary()
 	pass
 
 # Actions
