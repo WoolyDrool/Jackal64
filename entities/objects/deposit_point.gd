@@ -24,13 +24,25 @@ func _process(delta):
 func _deposit():
 	match typeof(DepositType):
 		0:
-			$"Interact".interactText = "Garbage Deposit"
-			print("Garbage Deposited")
+			_deposit_garbage()
 		1:
-			$"Interact".interactText = "Recycle Deposit"
-			print("Recycle Deposited")
+			_deposit_recycle()
 		2:
-			$"Interact".interactText = "All Deposit"
-			print("All Deposited")
+			_deposit_all()
 		_:
 			print("No deposit type specified")
+
+func _deposit_garbage():
+	print("Garbage Deposited")
+	# Do Thing
+	pass
+
+func _deposit_recycle():
+	print("Recycle Deposited")
+	# Do Thing
+	pass
+
+func _deposit_all():
+	print("All Deposited")
+	# Do Thing
+	pass
