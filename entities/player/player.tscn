@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dpc2xjylcdgse"]
 
-[ext_resource type="Script" path="res://entities/player/player.gd" id="1_61xkj"]
+[ext_resource type="Script" path="res://entities/player/player.gd" id="1_m01v4"]
 [ext_resource type="Script" path="res://entities/player/player_camera.gd" id="2_ecwpp"]
 [ext_resource type="PackedScene" uid="uid://cfuum0m1fdiet" path="res://ui/main_ui.tscn" id="2_xevq3"]
 [ext_resource type="PackedScene" uid="uid://bdxfhwdlyw4vh" path="res://entities/player/tools/tool_hatchet.tscn" id="3_4ghhx"]
@@ -13,13 +13,12 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_02v85"]
 size = Vector3(0.7, 1, 0.7)
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "rotation_helper")]
 collision_mask = 35
-script = ExtResource("1_61xkj")
-MAX_SPEED = 8
-JUMP_SPEED = 6
-DEACCEL = 8
-MOUSE_SENSITIVITY = 0.1
+script = ExtResource("1_m01v4")
+MOUSE_SENSITIVITY = 1.0
+camera = NodePath("Neck/Camera3D")
+rotation_helper = NodePath("Neck")
 
 [node name="Body" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_2muic")
@@ -59,6 +58,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="InteractText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+layout_mode = 0
 offset_left = -45.0
 offset_top = -7.0
 offset_right = 74.0
@@ -72,6 +72,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ModifierText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+layout_mode = 0
 offset_left = -45.0
 offset_top = -31.0
 offset_right = 74.0
@@ -86,6 +87,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AppendText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+layout_mode = 0
 offset_left = -45.0
 offset_top = 19.0
 offset_right = 74.0

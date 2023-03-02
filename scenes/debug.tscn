@@ -28,7 +28,11 @@ sky = SubResource("Sky_3y8ud")
 
 [node name="Player" parent="." instance=ExtResource("1_bei8j")]
 transform = Transform3D(-3.42435e-07, 0, -8, 0, 0.979, 0, 7.834, 0, -3.49691e-07, -8, 2, 0)
-MAX_SLOPE_ANGLE = 60
+MAX_SPEED = 10
+JUMP_SPEED = 5
+ACCEL = 16.0
+DEACCEL = 32
+MOUSE_SENSITIVITY = 0.08
 
 [node name="TrailManager" parent="." instance=ExtResource("5_17nia")]
 
@@ -50,6 +54,9 @@ environment = SubResource("Environment_f12el")
 [node name="Geometry" type="Node" parent="World"]
 
 [node name="Ground" parent="World/Geometry" instance=ExtResource("9_2ysk1")]
+
+[node name="Ground2" parent="World/Geometry" instance=ExtResource("9_2ysk1")]
+transform = Transform3D(2.06592, 0, 0, 0, 0.998025, 0, 0, 0, 1.99605, 0, 0, -32)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="World"]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
