@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c5rs3gdf8h1ie"]
+[gd_scene load_steps=5 format=3 uid="uid://cirv2qr73tyah"]
 
-[ext_resource type="Script" path="res://entities/objects/objective_piece.gd" id="1_u7rre"]
-[ext_resource type="PackedScene" uid="uid://pletdq3bfgxj" path="res://systems/interact.tscn" id="2_5jcio"]
+[ext_resource type="Script" path="res://entities/items/objective_piece.gd" id="1_l0vfd"]
+[ext_resource type="PackedScene" uid="uid://pletdq3bfgxj" path="res://systems/interact.tscn" id="2_6b8n3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7ej0k"]
 
@@ -11,7 +11,7 @@
 disable_mode = 2
 collision_layer = 16
 collision_mask = 16
-script = ExtResource("1_u7rre")
+script = ExtResource("1_l0vfd")
 itemName = "Trash"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -22,5 +22,9 @@ shape = SubResource("BoxShape3D_7ej0k")
 transform = Transform3D(0.285377, 0, 0, 0, 0.285377, 0, 0, 0, 0.285377, 0, 0, 0)
 mesh = SubResource("SphereMesh_ctbtc")
 
-[node name="Interact" parent="." instance=ExtResource("2_5jcio")]
+[node name="Interact" parent="." instance=ExtResource("2_6b8n3")]
 methodName = "_on_grab"
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+can_sleep = false
+freeze_mode = 1

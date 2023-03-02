@@ -21,4 +21,20 @@ func add_item(item : GameItemObjective):
 	EventBus.G_UI_UPDATE_COUNTS.emit()
 	pass
 
+# DEBUG ONLY (these are terrible methods)
+# Rewrite with better solution later
+func remove_garbage(amount : int):
+	level_trash_count -= amount	
+	EventBus.G_UI_UPDATE_COUNTS.emit()
+	pass
 
+func remove_recycle(amount : int):
+	level_recycle_count -= amount
+	EventBus.G_UI_UPDATE_COUNTS.emit()
+	pass
+
+func remove_all():
+	level_recycle_count = 0
+	level_trash_count = 0
+	EventBus.G_UI_UPDATE_COUNTS.emit()
+	pass
