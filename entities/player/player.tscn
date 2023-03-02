@@ -1,22 +1,24 @@
-[gd_scene load_steps=8 format=3 uid="uid://dpc2xjylcdgse"]
+[gd_scene load_steps=10 format=3 uid="uid://dpc2xjylcdgse"]
 
-[ext_resource type="Script" path="res://entities/player/player.gd" id="1_61xkj"]
+[ext_resource type="Script" path="res://entities/player/player.gd" id="1_m01v4"]
 [ext_resource type="Script" path="res://entities/player/player_camera.gd" id="2_ecwpp"]
 [ext_resource type="PackedScene" uid="uid://cfuum0m1fdiet" path="res://ui/main_ui.tscn" id="2_xevq3"]
 [ext_resource type="PackedScene" uid="uid://bdxfhwdlyw4vh" path="res://entities/player/tools/tool_hatchet.tscn" id="3_4ghhx"]
+[ext_resource type="FontFile" uid="uid://d1o6kv64g121o" path="res://media/Fonts/coolvetica condensed rg.ttf" id="3_vr1kv"]
+[ext_resource type="PackedScene" uid="uid://myhwiai8lqgc" path="res://ui/minigames/lock/minigame_unlock_ui.tscn" id="5_6tkap"]
 [ext_resource type="Script" path="res://entities/player/player_inventory.gd" id="5_2148u"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2muic"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_02v85"]
+size = Vector3(0.7, 1, 0.7)
 
-[node name="Player" type="CharacterBody3D"]
-collision_layer = 33
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("camera", "rotation_helper")]
 collision_mask = 35
-script = ExtResource("1_61xkj")
-MAX_SPEED = 8
-JUMP_SPEED = 9
-MOUSE_SENSITIVITY = 0.1
+script = ExtResource("1_m01v4")
+MOUSE_SENSITIVITY = 1.0
+camera = NodePath("Neck/Camera3D")
+rotation_helper = NodePath("Neck")
 
 [node name="Body" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_2muic")
@@ -24,7 +26,6 @@ shape = SubResource("CapsuleShape3D_2muic")
 [node name="Feet" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.05, 0, 0, 0, 1, 0, -1, 0)
 shape = SubResource("BoxShape3D_02v85")
-disabled = true
 
 [node name="Neck" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -58,10 +59,45 @@ grow_vertical = 2
 
 [node name="InteractText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -45.0
+offset_top = -7.0
+offset_right = 74.0
+offset_bottom = 33.0
+pivot_offset = Vector2(60, 21)
 auto_translate = false
+theme_override_fonts/font = ExtResource("3_vr1kv")
+theme_override_font_sizes/font_size = 30
 text = "Interact Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModifierText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+layout_mode = 0
+offset_left = -45.0
+offset_top = -31.0
+offset_right = 74.0
+offset_bottom = 9.0
+pivot_offset = Vector2(60, 21)
+auto_translate = false
+theme_override_colors/font_color = Color(0.666667, 0.666667, 0.666667, 1)
+theme_override_fonts/font = ExtResource("3_vr1kv")
+theme_override_font_sizes/font_size = 25
+text = "[Modifier]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AppendText" type="Label" parent="Neck/Camera3D/ImmediateUI"]
+layout_mode = 0
+offset_left = -45.0
+offset_top = 19.0
+offset_right = 74.0
+offset_bottom = 59.0
+pivot_offset = Vector2(60, 21)
+auto_translate = false
+theme_override_colors/font_color = Color(0.792157, 0.498039, 0.407843, 1)
+theme_override_fonts/font = ExtResource("3_vr1kv")
+theme_override_font_sizes/font_size = 25
+text = "[Append]"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -69,11 +105,16 @@ vertical_alignment = 1
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="MeshInstance3D" parent="Neck/Camera3D/Hatchet" index="4"]
-transform = Transform3D(0.2, 0, 0, 0, 1.4, 0, 0, 0, 0.2, -0.580646, -0.174325, -0.37091)
+transform = Transform3D(0.2, 0, 0, 0, 1.4, 0, 0, 0, 0.2, -0.580646, -0.174325, -0.723717)
 
 [node name="Toolbelt" type="Node3D" parent="Neck"]
 
+[node name="Node3D" type="Node3D" parent="Neck"]
+
 [node name="MainUI" parent="." instance=ExtResource("2_xevq3")]
+
+[node name="minigame_unlock_ui" parent="." instance=ExtResource("5_6tkap")]
+visible = false
 
 [node name="Inventory" type="Node" parent="."]
 script = ExtResource("5_2148u")

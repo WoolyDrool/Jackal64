@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl8aeiglex0i5"
-path="res://.godot/imported/spr_ui_tool_radio.png-f48a722a4a01a8bab17edfde82484374.ctex"
+path="res://.godot/imported/spr_ui_tool_radio.png-d9955d19ccec5ba0cd4c159b943b19a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Items/spr_ui_tool_radio.png"
-dest_files=["res://.godot/imported/spr_ui_tool_radio.png-f48a722a4a01a8bab17edfde82484374.ctex"]
+source_file="res://media/Sprites/UI/Items/spr_ui_tool_radio.png"
+dest_files=["res://.godot/imported/spr_ui_tool_radio.png-d9955d19ccec5ba0cd4c159b943b19a0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://60pfjfhfr2er"
-path="res://.godot/imported/spr_UI_key_RightBumper.png-0f759050a452ae21d2f6ebf7d1ba318c.ctex"
+path="res://.godot/imported/spr_UI_key_RightBumper.png-35f3d7caf28e2b3d82efe71fc869840b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Keys/spr_UI_key_RightBumper.png"
-dest_files=["res://.godot/imported/spr_UI_key_RightBumper.png-0f759050a452ae21d2f6ebf7d1ba318c.ctex"]
+source_file="res://media/Sprites/UI/Keys/spr_UI_key_RightBumper.png"
+dest_files=["res://.godot/imported/spr_UI_key_RightBumper.png-35f3d7caf28e2b3d82efe71fc869840b.ctex"]
 
 [params]
 

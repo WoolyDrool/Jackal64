@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1tomp55wb18n"
-path="res://.godot/imported/spr_UI_key_SwitchDefault_A.png-0f1650ae9bf260a5fdf61ec04c28002d.ctex"
+path="res://.godot/imported/spr_UI_key_SwitchDefault_A.png-6e61c8a4cb176af6106cc80cb3a4599f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/sprites/UI/Keys/Switch-Default/spr_UI_key_SwitchDefault_A.png"
-dest_files=["res://.godot/imported/spr_UI_key_SwitchDefault_A.png-0f1650ae9bf260a5fdf61ec04c28002d.ctex"]
+source_file="res://media/Sprites/UI/Keys/Switch-Default/spr_UI_key_SwitchDefault_A.png"
+dest_files=["res://.godot/imported/spr_UI_key_SwitchDefault_A.png-6e61c8a4cb176af6106cc80cb3a4599f.ctex"]
 
 [params]
 

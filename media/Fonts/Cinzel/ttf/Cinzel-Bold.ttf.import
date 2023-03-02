@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://crbgacss2a2un"
-path="res://.godot/imported/Cinzel-Bold.ttf-b312d294087bb80b513bac910f75a3b6.fontdata"
+path="res://.godot/imported/Cinzel-Bold.ttf-3f5cbf2b6b425e3aa920b00d365fbc0b.fontdata"
 
 [deps]
 
-source_file="res://media/fonts/Cinzel/ttf/Cinzel-Bold.ttf"
-dest_files=["res://.godot/imported/Cinzel-Bold.ttf-b312d294087bb80b513bac910f75a3b6.fontdata"]
+source_file="res://media/Fonts/Cinzel/ttf/Cinzel-Bold.ttf"
+dest_files=["res://.godot/imported/Cinzel-Bold.ttf-3f5cbf2b6b425e3aa920b00d365fbc0b.fontdata"]
 
 [params]
 

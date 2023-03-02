@@ -11,18 +11,24 @@ extends CharacterBody3D
 @export var MOUSE_SENSITIVITY = 0.05
 
 # Internal variables
-const GRAVITY = -24.8
+var GRAVITY = -ProjectSettings.get_setting("physics/3d/default_gravity")
 var vel = Vector3()
 var dir = Vector3()
 
-
 # Refs
-var camera
-var rotation_helper
+@export var camera : Camera3D
+@export var rotation_helper : Node3D
+
+# TODO ----
+# 1 Make angles/sliding feel better. Its very snappy and locky and Skyrim-y, for lack of a better word
+# 2 Implement a state machine of some kind
+# 3 Procedural headbob/crouch animations
 
 func _ready():
-	camera = $Neck/Camera3D
-	rotation_helper = $Neck
+	if !camera:
+		camera = $Neck/Camera3D
+	if !rotation_helper:	
+		rotation_helper = $Neck
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
